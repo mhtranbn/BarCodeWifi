@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2CB1CC1A7200066B39A /* AppDelegate.swift */; };
+		323BD2CE1CC1A7200066B39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2CD1CC1A7200066B39A /* ViewController.swift */; };
+		323BD2D11CC1A7200066B39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2CF1CC1A7200066B39A /* Main.storyboard */; };
+		323BD2D31CC1A7200066B39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2D21CC1A7200066B39A /* Assets.xcassets */; };
+		323BD2D61CC1A7200066B39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */; };
+		323BD2E11CC1A7200066B39A /* BarCodeWifiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2E01CC1A7200066B39A /* BarCodeWifiTests.swift */; };
+		323BD2EC1CC1A7200066B39A /* BarCodeWifiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2EB1CC1A7200066B39A /* BarCodeWifiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		323BD2DD1CC1A7200066B39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323BD2C01CC1A7200066B39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323BD2C71CC1A7200066B39A;
+			remoteInfo = BarCodeWifi;
+		};
+		323BD2E81CC1A7200066B39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323BD2C01CC1A7200066B39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323BD2C71CC1A7200066B39A;
+			remoteInfo = BarCodeWifi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		323BD2C81CC1A7200066B39A /* BarCodeWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCodeWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		323BD2CB1CC1A7200066B39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		323BD2CD1CC1A7200066B39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		323BD2D01CC1A7200066B39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		323BD2D21CC1A7200066B39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		323BD2D51CC1A7200066B39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		323BD2D71CC1A7200066B39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323BD2DC1CC1A7200066B39A /* BarCodeWifiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeWifiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323BD2E01CC1A7200066B39A /* BarCodeWifiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeWifiTests.swift; sourceTree = "<group>"; };
+		323BD2E21CC1A7200066B39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323BD2E71CC1A7200066B39A /* BarCodeWifiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeWifiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323BD2EB1CC1A7200066B39A /* BarCodeWifiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeWifiUITests.swift; sourceTree = "<group>"; };
+		323BD2ED1CC1A7200066B39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		323BD2C51CC1A7200066B39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323BD2D91CC1A7200066B39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323BD2E41CC1A7200066B39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		323BD2BF1CC1A7200066B39A = {
+			isa = PBXGroup;
+			children = (
+				323BD2CA1CC1A7200066B39A /* BarCodeWifi */,
+				323BD2DF1CC1A7200066B39A /* BarCodeWifiTests */,
+				323BD2EA1CC1A7200066B39A /* BarCodeWifiUITests */,
+				323BD2C91CC1A7200066B39A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		323BD2C91CC1A7200066B39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				323BD2C81CC1A7200066B39A /* BarCodeWifi.app */,
+				323BD2DC1CC1A7200066B39A /* BarCodeWifiTests.xctest */,
+				323BD2E71CC1A7200066B39A /* BarCodeWifiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		323BD2CA1CC1A7200066B39A /* BarCodeWifi */ = {
+			isa = PBXGroup;
+			children = (
+				323BD2CB1CC1A7200066B39A /* AppDelegate.swift */,
+				323BD2CD1CC1A7200066B39A /* ViewController.swift */,
+				323BD2CF1CC1A7200066B39A /* Main.storyboard */,
+				323BD2D21CC1A7200066B39A /* Assets.xcassets */,
+				323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */,
+				323BD2D71CC1A7200066B39A /* Info.plist */,
+			);
+			path = BarCodeWifi;
+			sourceTree = "<group>";
+		};
+		323BD2DF1CC1A7200066B39A /* BarCodeWifiTests */ = {
+			isa = PBXGroup;
+			children = (
+				323BD2E01CC1A7200066B39A /* BarCodeWifiTests.swift */,
+				323BD2E21CC1A7200066B39A /* Info.plist */,
+			);
+			path = BarCodeWifiTests;
+			sourceTree = "<group>";
+		};
+		323BD2EA1CC1A7200066B39A /* BarCodeWifiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				323BD2EB1CC1A7200066B39A /* BarCodeWifiUITests.swift */,
+				323BD2ED1CC1A7200066B39A /* Info.plist */,
+			);
+			path = BarCodeWifiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		323BD2C71CC1A7200066B39A /* BarCodeWifi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323BD2F01CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifi" */;
+			buildPhases = (
+				323BD2C41CC1A7200066B39A /* Sources */,
+				323BD2C51CC1A7200066B39A /* Frameworks */,
+				323BD2C61CC1A7200066B39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarCodeWifi;
+			productName = BarCodeWifi;
+			productReference = 323BD2C81CC1A7200066B39A /* BarCodeWifi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		323BD2DB1CC1A7200066B39A /* BarCodeWifiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323BD2F31CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiTests" */;
+			buildPhases = (
+				323BD2D81CC1A7200066B39A /* Sources */,
+				323BD2D91CC1A7200066B39A /* Frameworks */,
+				323BD2DA1CC1A7200066B39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323BD2DE1CC1A7200066B39A /* PBXTargetDependency */,
+			);
+			name = BarCodeWifiTests;
+			productName = BarCodeWifiTests;
+			productReference = 323BD2DC1CC1A7200066B39A /* BarCodeWifiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		323BD2E61CC1A7200066B39A /* BarCodeWifiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323BD2F61CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiUITests" */;
+			buildPhases = (
+				323BD2E31CC1A7200066B39A /* Sources */,
+				323BD2E41CC1A7200066B39A /* Frameworks */,
+				323BD2E51CC1A7200066B39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323BD2E91CC1A7200066B39A /* PBXTargetDependency */,
+			);
+			name = BarCodeWifiUITests;
+			productName = BarCodeWifiUITests;
+			productReference = 323BD2E71CC1A7200066B39A /* BarCodeWifiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323BD2C01CC1A7200066B39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mhtran;
+				TargetAttributes = {
+					323BD2C71CC1A7200066B39A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					323BD2DB1CC1A7200066B39A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 323BD2C71CC1A7200066B39A;
+					};
+					323BD2E61CC1A7200066B39A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 323BD2C71CC1A7200066B39A;
+					};
+				};
+			};
+			buildConfigurationList = 323BD2C31CC1A7200066B39A /* Build configuration list for PBXProject "BarCodeWifi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 323BD2BF1CC1A7200066B39A;
+			productRefGroup = 323BD2C91CC1A7200066B39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				323BD2C71CC1A7200066B39A /* BarCodeWifi */,
+				323BD2DB1CC1A7200066B39A /* BarCodeWifiTests */,
+				323BD2E61CC1A7200066B39A /* BarCodeWifiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		323BD2C61CC1A7200066B39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323BD2D61CC1A7200066B39A /* LaunchScreen.storyboard in Resources */,
+				323BD2D31CC1A7200066B39A /* Assets.xcassets in Resources */,
+				323BD2D11CC1A7200066B39A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323BD2DA1CC1A7200066B39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323BD2E51CC1A7200066B39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323BD2C41CC1A7200066B39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323BD2CE1CC1A7200066B39A /* ViewController.swift in Sources */,
+				323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323BD2D81CC1A7200066B39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323BD2E11CC1A7200066B39A /* BarCodeWifiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323BD2E31CC1A7200066B39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323BD2EC1CC1A7200066B39A /* BarCodeWifiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323BD2DE1CC1A7200066B39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323BD2C71CC1A7200066B39A /* BarCodeWifi */;
+			targetProxy = 323BD2DD1CC1A7200066B39A /* PBXContainerItemProxy */;
+		};
+		323BD2E91CC1A7200066B39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323BD2C71CC1A7200066B39A /* BarCodeWifi */;
+			targetProxy = 323BD2E81CC1A7200066B39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		323BD2CF1CC1A7200066B39A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323BD2D01CC1A7200066B39A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323BD2D51CC1A7200066B39A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		323BD2EE1CC1A7200066B39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		323BD2EF1CC1A7200066B39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		323BD2F11CC1A7200066B39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BarCodeWifi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		323BD2F21CC1A7200066B39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BarCodeWifi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		323BD2F41CC1A7200066B39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BarCodeWifiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCodeWifi.app/BarCodeWifi";
+			};
+			name = Debug;
+		};
+		323BD2F51CC1A7200066B39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BarCodeWifiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCodeWifi.app/BarCodeWifi";
+			};
+			name = Release;
+		};
+		323BD2F71CC1A7200066B39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BarCodeWifiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BarCodeWifi;
+			};
+			name = Debug;
+		};
+		323BD2F81CC1A7200066B39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BarCodeWifiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BarCodeWifi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323BD2C31CC1A7200066B39A /* Build configuration list for PBXProject "BarCodeWifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323BD2EE1CC1A7200066B39A /* Debug */,
+				323BD2EF1CC1A7200066B39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323BD2F01CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323BD2F11CC1A7200066B39A /* Debug */,
+				323BD2F21CC1A7200066B39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		323BD2F31CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323BD2F41CC1A7200066B39A /* Debug */,
+				323BD2F51CC1A7200066B39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		323BD2F61CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323BD2F71CC1A7200066B39A /* Debug */,
+				323BD2F81CC1A7200066B39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 323BD2C01CC1A7200066B39A /* Project object */;
+}
