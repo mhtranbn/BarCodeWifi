@@ -24,6 +24,7 @@
 		324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */; };
 		3279281B1CC4EF4E0044C9DD /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 327928111CC4EF340044C9DD /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		329F91981CC3E84B009823D2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F91971CC3E84B009823D2 /* Extension.swift */; };
+		32BD4D4F1CC6226000D32C1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD4D4E1CC6226000D32C1A /* ViewController.swift */; };
 		32CDD36B1CC5CB33006F33C2 /* ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD36A1CC5CB33006F33C2 /* ex.png */; };
 		32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../../../Volumes/DATA/CryptoSwift-swift3/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
 		329E622F1CC3927600DAC906 /* HeaderBarCodeWifi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderBarCodeWifi.h; sourceTree = "<group>"; };
 		329F91971CC3E84B009823D2 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		32BD4D4E1CC6226000D32C1A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32CDD36A1CC5CB33006F33C2 /* ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex.png; sourceTree = "<group>"; };
 		32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPCameraCustomAlbum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +163,7 @@
 		320619221CC60BF7003A9E23 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				32BD4D4E1CC6226000D32C1A /* ViewController.swift */,
 				320619231CC60BF7003A9E23 /* MenuVC.swift */,
 				320619241CC60BF7003A9E23 /* PlainTextVC.swift */,
 				320619251CC60BF7003A9E23 /* QRcodeVC.swift */,
@@ -476,6 +479,7 @@
 				324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */,
 				323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */,
 				323BD3041CC1C61D0066B39A /* MaterialButton.swift in Sources */,
+				32BD4D4F1CC6226000D32C1A /* ViewController.swift in Sources */,
 				320619271CC60BF7003A9E23 /* MenuVC.swift in Sources */,
 				32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */,
 				320619291CC60BF7003A9E23 /* QRcodeVC.swift in Sources */,
