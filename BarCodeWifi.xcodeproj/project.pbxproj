@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3206191D1CC5F4C3003A9E23 /* QRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206191C1CC5F4C3003A9E23 /* QRcodeVC.swift */; };
 		32334B151CC344C90003B570 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32334B141CC344C90003B570 /* MenuVC.swift */; };
 		32334B171CC346DE0003B570 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32334B161CC346DE0003B570 /* MaterialView.swift */; };
 		323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2CB1CC1A7200066B39A /* AppDelegate.swift */; };
@@ -22,7 +23,6 @@
 		324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */; };
 		3279281B1CC4EF4E0044C9DD /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 327928111CC4EF340044C9DD /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		329E621C1CC382DD00DAC906 /* WifiNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */; };
-		329E62201CC3831F00DAC906 /* QRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E621F1CC3831F00DAC906 /* QRcodeVC.swift */; };
 		329F91981CC3E84B009823D2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F91971CC3E84B009823D2 /* Extension.swift */; };
 		32CDD36B1CC5CB33006F33C2 /* ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD36A1CC5CB33006F33C2 /* ex.png */; };
 		32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */; };
@@ -102,6 +102,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3206191C1CC5F4C3003A9E23 /* QRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRcodeVC.swift; path = Controller/QRcodeVC.swift; sourceTree = "<group>"; };
 		32334B141CC344C90003B570 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuVC.swift; path = Controller/MenuVC.swift; sourceTree = "<group>"; };
 		32334B161CC346DE0003B570 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialView.swift; path = View/MaterialView.swift; sourceTree = "<group>"; };
 		323BD2C81CC1A7200066B39A /* BarCodeWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCodeWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +126,6 @@
 		32507A521CC47A5200D11AA9 /* BarCodeWifiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BarCodeWifiHeader.h; path = Utils/BarCodeWifiHeader.h; sourceTree = "<group>"; };
 		327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../../../Volumes/DATA/CryptoSwift-swift3/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
 		329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WifiNetworkVC.swift; path = Controller/WifiNetworkVC.swift; sourceTree = "<group>"; };
-		329E621F1CC3831F00DAC906 /* QRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRcodeVC.swift; path = Controller/QRcodeVC.swift; sourceTree = "<group>"; };
 		329E622F1CC3927600DAC906 /* HeaderBarCodeWifi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderBarCodeWifi.h; sourceTree = "<group>"; };
 		329F91971CC3E84B009823D2 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		32CDD36A1CC5CB33006F33C2 /* ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex.png; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 				323BD2CD1CC1A7200066B39A /* ViewController.swift */,
 				32334B141CC344C90003B570 /* MenuVC.swift */,
 				329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */,
-				329E621F1CC3831F00DAC906 /* QRcodeVC.swift */,
+				3206191C1CC5F4C3003A9E23 /* QRcodeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -470,8 +470,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3206191D1CC5F4C3003A9E23 /* QRcodeVC.swift in Sources */,
 				329F91981CC3E84B009823D2 /* Extension.swift in Sources */,
-				329E62201CC3831F00DAC906 /* QRcodeVC.swift in Sources */,
 				323BD2CE1CC1A7200066B39A /* ViewController.swift in Sources */,
 				324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */,
 				323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */,
