@@ -21,8 +21,12 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrcodeframeView: UIView?
+    var result : String!
+    var k: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         ScanPicture()
         self.view.addSubview(flashButton)
         self.view.addSubview(switchCameraButton)
@@ -90,9 +94,17 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             
             let BarcodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObject as AVMetadataMachineReadableCodeObject) as! AVMetadataMachineReadableCodeObject
             qrcodeframeView?.frame = BarcodeObject.bounds
-            if metadataObject.stringValue != nil {
+            if metadataObject.stringValue != nil && k == true {
+                k = false
                 NSLog("hang ve")
-//                ResultAndAction.setTitle(metadataObject.stringValue, forState: UIControlState.Normal)
+                result = metadataObject.stringValue
+                
+                navigationController?.pushViewController(({
+                let vc = self.storyboard!.instantiateViewControllerWithIdentifier("plainTextVC") as! PlainTextVC
+                    vc.setData(self.result)
+                    return vc
+                })(), animated: true)
+                
             }
         }
     }
