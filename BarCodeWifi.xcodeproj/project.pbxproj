@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3206191D1CC5F4C3003A9E23 /* QRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206191C1CC5F4C3003A9E23 /* QRcodeVC.swift */; };
-		32334B151CC344C90003B570 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32334B141CC344C90003B570 /* MenuVC.swift */; };
+		320619271CC60BF7003A9E23 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320619231CC60BF7003A9E23 /* MenuVC.swift */; };
+		320619281CC60BF7003A9E23 /* PlainTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320619241CC60BF7003A9E23 /* PlainTextVC.swift */; };
+		320619291CC60BF7003A9E23 /* QRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320619251CC60BF7003A9E23 /* QRcodeVC.swift */; };
+		3206192A1CC60BF7003A9E23 /* WifiNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320619261CC60BF7003A9E23 /* WifiNetworkVC.swift */; };
 		32334B171CC346DE0003B570 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32334B161CC346DE0003B570 /* MaterialView.swift */; };
 		323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2CB1CC1A7200066B39A /* AppDelegate.swift */; };
-		323BD2CE1CC1A7200066B39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2CD1CC1A7200066B39A /* ViewController.swift */; };
 		323BD2D11CC1A7200066B39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2CF1CC1A7200066B39A /* Main.storyboard */; };
 		323BD2D31CC1A7200066B39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2D21CC1A7200066B39A /* Assets.xcassets */; };
 		323BD2D61CC1A7200066B39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */; };
@@ -22,7 +23,6 @@
 		323BD3061CC1C6A40066B39A /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD3051CC1C6A40066B39A /* Contants.swift */; };
 		324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */; };
 		3279281B1CC4EF4E0044C9DD /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 327928111CC4EF340044C9DD /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		329E621C1CC382DD00DAC906 /* WifiNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */; };
 		329F91981CC3E84B009823D2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F91971CC3E84B009823D2 /* Extension.swift */; };
 		32CDD36B1CC5CB33006F33C2 /* ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD36A1CC5CB33006F33C2 /* ex.png */; };
 		32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */; };
@@ -102,12 +102,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3206191C1CC5F4C3003A9E23 /* QRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRcodeVC.swift; path = Controller/QRcodeVC.swift; sourceTree = "<group>"; };
-		32334B141CC344C90003B570 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuVC.swift; path = Controller/MenuVC.swift; sourceTree = "<group>"; };
+		320619231CC60BF7003A9E23 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		320619241CC60BF7003A9E23 /* PlainTextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainTextVC.swift; sourceTree = "<group>"; };
+		320619251CC60BF7003A9E23 /* QRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeVC.swift; sourceTree = "<group>"; };
+		320619261CC60BF7003A9E23 /* WifiNetworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiNetworkVC.swift; sourceTree = "<group>"; };
 		32334B161CC346DE0003B570 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialView.swift; path = View/MaterialView.swift; sourceTree = "<group>"; };
 		323BD2C81CC1A7200066B39A /* BarCodeWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCodeWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323BD2CB1CC1A7200066B39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		323BD2CD1CC1A7200066B39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = BarCodeWifi/ViewController.swift; sourceTree = "<group>"; };
 		323BD2D01CC1A7200066B39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		323BD2D21CC1A7200066B39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		323BD2D51CC1A7200066B39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,7 +126,6 @@
 		324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPhotoAlbum.swift; path = Modal/CustomPhotoAlbum.swift; sourceTree = "<group>"; };
 		32507A521CC47A5200D11AA9 /* BarCodeWifiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BarCodeWifiHeader.h; path = Utils/BarCodeWifiHeader.h; sourceTree = "<group>"; };
 		327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../../../Volumes/DATA/CryptoSwift-swift3/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
-		329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WifiNetworkVC.swift; path = Controller/WifiNetworkVC.swift; sourceTree = "<group>"; };
 		329E622F1CC3927600DAC906 /* HeaderBarCodeWifi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderBarCodeWifi.h; sourceTree = "<group>"; };
 		329F91971CC3E84B009823D2 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		32CDD36A1CC5CB33006F33C2 /* ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex.png; sourceTree = "<group>"; };
@@ -158,6 +158,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		320619221CC60BF7003A9E23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				320619231CC60BF7003A9E23 /* MenuVC.swift */,
+				320619241CC60BF7003A9E23 /* PlainTextVC.swift */,
+				320619251CC60BF7003A9E23 /* QRcodeVC.swift */,
+				320619261CC60BF7003A9E23 /* WifiNetworkVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		323BD2BF1CC1A7200066B39A = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +179,7 @@
 				323BD3011CC1C4C50066B39A /* Sources */,
 				323BD3001CC1C4AE0066B39A /* Modal */,
 				323BD2FE1CC1C4A20066B39A /* View */,
-				323BD2FF1CC1C4A80066B39A /* Controller */,
+				320619221CC60BF7003A9E23 /* Controller */,
 				323BD2FB1CC1C43B0066B39A /* Framwork */,
 				323BD2CA1CC1A7200066B39A /* BarCodeWifi */,
 				323BD2DF1CC1A7200066B39A /* BarCodeWifiTests */,
@@ -233,17 +244,6 @@
 				32334B161CC346DE0003B570 /* MaterialView.swift */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		323BD2FF1CC1C4A80066B39A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				323BD2CD1CC1A7200066B39A /* ViewController.swift */,
-				32334B141CC344C90003B570 /* MenuVC.swift */,
-				329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */,
-				3206191C1CC5F4C3003A9E23 /* QRcodeVC.swift */,
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 		323BD3001CC1C4AE0066B39A /* Modal */ = {
@@ -470,17 +470,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3206191D1CC5F4C3003A9E23 /* QRcodeVC.swift in Sources */,
+				3206192A1CC60BF7003A9E23 /* WifiNetworkVC.swift in Sources */,
 				329F91981CC3E84B009823D2 /* Extension.swift in Sources */,
-				323BD2CE1CC1A7200066B39A /* ViewController.swift in Sources */,
+				320619281CC60BF7003A9E23 /* PlainTextVC.swift in Sources */,
 				324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */,
 				323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */,
 				323BD3041CC1C61D0066B39A /* MaterialButton.swift in Sources */,
+				320619271CC60BF7003A9E23 /* MenuVC.swift in Sources */,
 				32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */,
-				329E621C1CC382DD00DAC906 /* WifiNetworkVC.swift in Sources */,
+				320619291CC60BF7003A9E23 /* QRcodeVC.swift in Sources */,
 				32334B171CC346DE0003B570 /* MaterialView.swift in Sources */,
 				323BD3061CC1C6A40066B39A /* Contants.swift in Sources */,
-				32334B151CC344C90003B570 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
