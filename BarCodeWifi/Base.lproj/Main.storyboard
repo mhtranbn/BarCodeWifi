@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gUO-Y3-csg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Scan-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BarCodeWifi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,810 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8y-h5-DFL" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                <rect key="frame" x="265" y="541" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.84991274000000006" green="0.84991274000000006" blue="0.84991274000000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="0iS-Cw-vQc"/>
+                                    <constraint firstAttribute="height" constant="30" id="vUe-Fe-vaG"/>
+                                </constraints>
+                                <state key="normal" image="video_camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MN-Qr-f2i" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                <rect key="frame" x="510" y="541" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.84991274000000006" green="0.84991274000000006" blue="0.84991274000000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Ki9-bk-TJ9"/>
+                                    <constraint firstAttribute="height" constant="30" id="jwR-fK-Mmn"/>
+                                </constraints>
+                                <state key="normal" image="QuestionMark"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6O-bw-Lzb" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                <rect key="frame" x="15" y="541" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.84991274000000006" green="0.84991274000000006" blue="0.84991274000000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OvT-8N-eI7"/>
+                                    <constraint firstAttribute="width" constant="30" id="zOL-4P-r3S"/>
+                                </constraints>
+                                <state key="normal" image="flash_bang"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b8y-h5-DFL" secondAttribute="bottom" constant="10" id="C1d-yB-lpa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5MN-Qr-f2i" secondAttribute="bottom" constant="10" id="GBi-X5-c51"/>
+                            <constraint firstItem="b8y-h5-DFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QdD-SU-6rv"/>
+                            <constraint firstItem="E6O-bw-Lzb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="bh4-ip-nfx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E6O-bw-Lzb" secondAttribute="bottom" constant="10" id="jwy-zp-ei0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5MN-Qr-f2i" secondAttribute="trailing" constant="10" id="t2N-jt-lI1"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Scan" id="kor-TA-5Ud">
+                        <barButtonItem key="leftBarButtonItem" image="back" style="plain" id="kKM-hG-SFc">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="1460878359_Grid" style="done" id="aC2-XU-GBW">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="xBp-a2-7vA" kind="show" id="YC5-VB-gT0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="flashButton" destination="E6O-bw-Lzb" id="bmC-na-4zY"/>
+                        <outlet property="helpButton" destination="5MN-Qr-f2i" id="k8I-UZ-cjc"/>
+                        <outlet property="switchCameraButton" destination="b8y-h5-DFL" id="NgC-z6-YCr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1635" y="473"/>
+        </scene>
+        <!--Menu BCWifi-->
+        <scene sceneID="mcf-M3-5VX">
+            <objects>
+                <viewController id="KCx-u9-DEm" customClass="MenuVC" customModule="BarCodeWifi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cSV-Qe-law"/>
+                        <viewControllerLayoutGuide type="bottom" id="fim-WF-lD6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0LL-F3-dKu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="weO-uF-I4q">
+                                <rect key="frame" x="14" y="72" width="550" height="482"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ty3-lk-P8j">
+                                        <rect key="frame" x="0.0" y="0.0" width="550" height="157"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GsR-S7-QQR" customClass="MaterialView" customModule="BarCodeWifi" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="274" height="157"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epM-zr-8U0" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                                        <rect key="frame" x="109" y="44" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="64" id="Otl-Pu-1MG"/>
+                                                        </constraints>
+                                                        <state key="normal" image="scan"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="Otl-Pu-1MG"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="centerX" secondItem="GsR-S7-QQR" secondAttribute="centerX" id="6HF-X6-GxD"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="centerX" secondItem="GsR-S7-QQR" secondAttribute="centerX" id="6Y7-Yy-9GU"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="centerX" secondItem="GsR-S7-QQR" secondAttribute="centerX" id="DsA-Bz-VCE"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="leading" secondItem="GsR-S7-QQR" secondAttribute="leading" constant="140" id="FkP-rK-fze"/>
+                                                    <constraint firstAttribute="trailing" secondItem="epM-zr-8U0" secondAttribute="trailing" constant="30" id="KjP-RZ-Egd"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="centerX" secondItem="GsR-S7-QQR" secondAttribute="centerX" id="LBa-av-UZB"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="leading" secondItem="GsR-S7-QQR" secondAttribute="leadingMargin" constant="20" id="Nt2-m1-y8Z"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="top" secondItem="GsR-S7-QQR" secondAttribute="top" constant="45" id="TkU-n2-shK"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="centerY" secondItem="GsR-S7-QQR" secondAttribute="centerY" id="Ycp-O2-PnG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="epM-zr-8U0" secondAttribute="trailing" constant="100" id="cqV-fp-J5E"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="centerY" secondItem="GsR-S7-QQR" secondAttribute="centerY" id="hps-RA-2xu"/>
+                                                    <constraint firstItem="epM-zr-8U0" firstAttribute="centerX" secondItem="GsR-S7-QQR" secondAttribute="centerX" id="tJg-EH-0eH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="epM-zr-8U0" secondAttribute="bottom" constant="45" id="vts-4H-M38"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6HF-X6-GxD"/>
+                                                        <exclude reference="6Y7-Yy-9GU"/>
+                                                        <exclude reference="FkP-rK-fze"/>
+                                                        <exclude reference="KjP-RZ-Egd"/>
+                                                        <exclude reference="LBa-av-UZB"/>
+                                                        <exclude reference="Nt2-m1-y8Z"/>
+                                                        <exclude reference="TkU-n2-shK"/>
+                                                        <exclude reference="Ycp-O2-PnG"/>
+                                                        <exclude reference="cqV-fp-J5E"/>
+                                                        <exclude reference="tJg-EH-0eH"/>
+                                                        <exclude reference="vts-4H-M38"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aXc-uP-U7b" customClass="MaterialView" customModule="BarCodeWifi" customModuleProvider="target">
+                                                <rect key="frame" x="279" y="0.0" width="271" height="157"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8u-b2-sCj" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                                        <rect key="frame" x="124" y="47" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="64" id="BFF-Ut-LZB"/>
+                                                            <constraint firstAttribute="width" constant="64" id="KHa-u6-bz7"/>
+                                                        </constraints>
+                                                        <state key="normal" image="history"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="BFF-Ut-LZB"/>
+                                                                <exclude reference="KHa-u6-bz7"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="leading" secondItem="aXc-uP-U7b" secondAttribute="leading" constant="50" id="8Qw-mN-h0g"/>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="centerY" secondItem="aXc-uP-U7b" secondAttribute="centerY" id="MD2-He-DDW"/>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="centerX" secondItem="aXc-uP-U7b" secondAttribute="centerX" id="NG3-Xh-p6q"/>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="centerY" secondItem="aXc-uP-U7b" secondAttribute="centerY" id="NnX-ma-TKV"/>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="centerX" secondItem="aXc-uP-U7b" secondAttribute="centerX" id="PTn-aE-TFT"/>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="centerX" secondItem="aXc-uP-U7b" secondAttribute="centerX" id="Xre-df-WNT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z8u-b2-sCj" secondAttribute="trailing" constant="40" id="YXI-2u-eko"/>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aXc-uP-U7b" secondAttribute="leading" constant="45" id="bfG-XA-kBE"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="z8u-b2-sCj" secondAttribute="trailing" constant="40" id="bvh-aw-h09"/>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="leading" secondItem="aXc-uP-U7b" secondAttribute="leading" priority="750" constant="30" id="lDl-hu-bd1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z8u-b2-sCj" secondAttribute="trailing" id="s0O-xG-YQJ"/>
+                                                    <constraint firstItem="z8u-b2-sCj" firstAttribute="centerY" secondItem="aXc-uP-U7b" secondAttribute="centerY" id="s75-UF-nbz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z8u-b2-sCj" secondAttribute="trailing" constant="30" id="wn9-2J-r4B"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="8Qw-mN-h0g"/>
+                                                        <exclude reference="MD2-He-DDW"/>
+                                                        <exclude reference="NG3-Xh-p6q"/>
+                                                        <exclude reference="PTn-aE-TFT"/>
+                                                        <exclude reference="Xre-df-WNT"/>
+                                                        <exclude reference="bfG-XA-kBE"/>
+                                                        <exclude reference="bvh-aw-h09"/>
+                                                        <exclude reference="lDl-hu-bd1"/>
+                                                        <exclude reference="s0O-xG-YQJ"/>
+                                                        <exclude reference="s75-UF-nbz"/>
+                                                        <exclude reference="wn9-2J-r4B"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bnN-mY-pGi">
+                                        <rect key="frame" x="0.0" y="162" width="550" height="158"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSl-9i-zrD" customClass="MaterialView" customModule="BarCodeWifi" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="158"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOG-mz-Taz" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                                        <rect key="frame" x="109" y="44" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="64" id="dHN-rI-spP"/>
+                                                        </constraints>
+                                                        <state key="normal" image="create"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="dHN-rI-spP"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <connections>
+                                                            <segue destination="5hU-A1-R0H" kind="show" id="tW3-yl-ydp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="kOG-mz-Taz" firstAttribute="centerX" secondItem="kSl-9i-zrD" secondAttribute="centerX" id="Obm-TS-9Th"/>
+                                                    <constraint firstItem="kOG-mz-Taz" firstAttribute="leading" secondItem="kSl-9i-zrD" secondAttribute="leading" constant="30" id="e7x-A3-FDF"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kOG-mz-Taz" secondAttribute="trailing" constant="40" id="f9e-un-brf"/>
+                                                    <constraint firstItem="kOG-mz-Taz" firstAttribute="centerY" secondItem="kSl-9i-zrD" secondAttribute="centerY" id="hKS-jA-vPg"/>
+                                                    <constraint firstItem="kOG-mz-Taz" firstAttribute="leading" secondItem="kSl-9i-zrD" secondAttribute="leading" constant="50" id="hoS-NH-ZwZ"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="Obm-TS-9Th"/>
+                                                        <exclude reference="e7x-A3-FDF"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dW-lT-48B" customClass="MaterialView" customModule="BarCodeWifi" customModuleProvider="target">
+                                                <rect key="frame" x="278" y="0.0" width="272" height="158"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCn-2e-Hxv" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                                        <rect key="frame" x="109" y="47" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="64" id="yED-dC-B9i"/>
+                                                        </constraints>
+                                                        <state key="normal" image="more"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="yED-dC-B9i"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="uCn-2e-Hxv" secondAttribute="trailing" constant="40" id="1sE-eh-RqS"/>
+                                                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="uCn-2e-Hxv" secondAttribute="trailing" constant="20" id="9wz-CR-h6K"/>
+                                                    <constraint firstItem="uCn-2e-Hxv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9dW-lT-48B" secondAttribute="leading" constant="45" id="JsI-pY-Aom"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uCn-2e-Hxv" secondAttribute="trailing" constant="30" id="XPU-Vi-QWW"/>
+                                                    <constraint firstItem="uCn-2e-Hxv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9dW-lT-48B" secondAttribute="leadingMargin" constant="45" id="g98-GI-HCD"/>
+                                                    <constraint firstItem="uCn-2e-Hxv" firstAttribute="centerX" secondItem="9dW-lT-48B" secondAttribute="centerX" id="gmW-mg-xuE"/>
+                                                    <constraint firstItem="uCn-2e-Hxv" firstAttribute="leading" secondItem="9dW-lT-48B" secondAttribute="leading" constant="109" id="mNo-3H-FDe"/>
+                                                    <constraint firstItem="uCn-2e-Hxv" firstAttribute="centerY" secondItem="9dW-lT-48B" secondAttribute="centerY" id="yYW-Wz-bYt"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="9wz-CR-h6K"/>
+                                                        <exclude reference="JsI-pY-Aom"/>
+                                                        <exclude reference="XPU-Vi-QWW"/>
+                                                        <exclude reference="g98-GI-HCD"/>
+                                                        <exclude reference="gmW-mg-xuE"/>
+                                                        <exclude reference="mNo-3H-FDe"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PM7-LN-qdy">
+                                        <rect key="frame" x="0.0" y="325" width="550" height="157"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTg-eC-aUo" customClass="MaterialView" customModule="BarCodeWifi" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="157"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agy-Wa-JaV" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                                        <rect key="frame" x="109" y="44" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="64" id="bX9-dT-BcY"/>
+                                                        </constraints>
+                                                        <state key="normal" image="setting"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="agy-Wa-JaV" firstAttribute="centerX" secondItem="DTg-eC-aUo" secondAttribute="centerX" id="5U8-IS-wVR"/>
+                                                    <constraint firstItem="agy-Wa-JaV" firstAttribute="centerY" secondItem="DTg-eC-aUo" secondAttribute="centerY" id="6qg-ve-5uq"/>
+                                                    <constraint firstItem="agy-Wa-JaV" firstAttribute="leading" secondItem="DTg-eC-aUo" secondAttribute="leading" constant="40" id="kfE-d9-4eZ"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="5U8-IS-wVR"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kqt-k9-cco" customClass="MaterialView" customModule="BarCodeWifi" customModuleProvider="target">
+                                                <rect key="frame" x="278" y="0.0" width="272" height="157"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-g3-XcU" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                                        <rect key="frame" x="109" y="44" width="64" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="64" id="vEO-FF-Q7Y"/>
+                                                        </constraints>
+                                                        <state key="normal" image="help"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="vEO-FF-Q7Y"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="yw6-g3-XcU" firstAttribute="centerX" secondItem="Kqt-k9-cco" secondAttribute="centerX" id="0PZ-fb-SUv"/>
+                                                    <constraint firstItem="yw6-g3-XcU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Kqt-k9-cco" secondAttribute="leading" constant="60" id="KXx-yM-1HS"/>
+                                                    <constraint firstItem="yw6-g3-XcU" firstAttribute="centerY" secondItem="Kqt-k9-cco" secondAttribute="centerY" id="LjJ-jQ-WrB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yw6-g3-XcU" secondAttribute="trailing" constant="50" id="OTF-RK-cRf"/>
+                                                    <constraint firstItem="yw6-g3-XcU" firstAttribute="leading" secondItem="Kqt-k9-cco" secondAttribute="leading" constant="45" id="cbd-Un-tHW"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="0PZ-fb-SUv"/>
+                                                        <exclude reference="cbd-Un-tHW"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="weO-uF-I4q" firstAttribute="leading" secondItem="0LL-F3-dKu" secondAttribute="leadingMargin" constant="5" id="GIj-Fy-nIl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="weO-uF-I4q" secondAttribute="trailing" constant="5" id="Jnk-UN-k3U"/>
+                            <constraint firstItem="weO-uF-I4q" firstAttribute="top" secondItem="cSV-Qe-law" secondAttribute="bottom" constant="5" id="RBc-fS-m4t"/>
+                            <constraint firstItem="fim-WF-lD6" firstAttribute="top" secondItem="weO-uF-I4q" secondAttribute="bottom" constant="5" id="VoY-2j-ySa"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Menu BCWifi" id="ZZA-QD-GV4">
+                        <barButtonItem key="leftBarButtonItem" image="back" style="plain" id="rX3-4j-THx">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="1460878359_Grid" style="done" id="1Ds-9R-ZKk">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZu-5F-qFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3196" y="485"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="UZA-j1-Syw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gUO-Y3-csg" userLabel="Scan" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AuF-9e-TaY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17959267400000001" green="0.55552601440000005" blue="0.0396004644" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iDj-84-kjH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXE-d2-dhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="473"/>
+        </scene>
+        <!--Menu BCWifi-->
+        <scene sceneID="kzB-nG-zFR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xBp-a2-7vA" userLabel="Menu BCWifi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bfo-2t-U18">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17959267400000001" green="0.55552601440000005" blue="0.0396004644" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KCx-u9-DEm" kind="relationship" relationship="rootViewController" id="vKc-IP-dxs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZg-jB-6AM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2514" y="460"/>
+        </scene>
+        <!--Wifi Network-->
+        <scene sceneID="jVg-ff-37b">
+            <objects>
+                <viewController id="Qho-wy-hUQ" customClass="WifiNetworkVC" customModule="BarCodeWifi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cwl-Gw-ZxJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="b9e-gN-mI0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dQf-ch-JAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7j-Mp-Alg">
+                                <rect key="frame" x="0.0" y="64" width="600" height="67"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9j-aW-i0o" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                        <rect key="frame" x="487" y="8" width="80" height="51"/>
+                                        <color key="backgroundColor" red="0.32328400359999998" green="1" blue="0.071284626409999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="ILp-to-zrA"/>
+                                            <constraint firstAttribute="height" constant="51" id="QLx-jd-bho"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="51" id="hxS-v3-i3E"/>
+                                            <constraint firstAttribute="width" constant="80" id="i4v-0U-dDs"/>
+                                            <constraint firstAttribute="width" constant="64" id="nQS-oO-Lc2"/>
+                                        </constraints>
+                                        <state key="normal" image="createQRcode"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ILp-to-zrA"/>
+                                                <exclude reference="nQS-oO-Lc2"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="createQRcodeAction:" destination="Qho-wy-hUQ" eventType="touchUpInside" id="LQU-Hq-cQv"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create a QR Code to connect to your Wifi network." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qy-5Q-lJz">
+                                        <rect key="frame" x="8" y="0.0" width="471" height="67"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94764397909999998" green="0.94764397909999998" blue="0.94764397909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="B9j-aW-i0o" firstAttribute="top" secondItem="a7j-Mp-Alg" secondAttribute="top" constant="8" id="9ON-gT-iVP"/>
+                                    <constraint firstItem="5qy-5Q-lJz" firstAttribute="centerX" secondItem="a7j-Mp-Alg" secondAttribute="centerX" id="A3z-aM-HMF"/>
+                                    <constraint firstItem="5qy-5Q-lJz" firstAttribute="top" secondItem="a7j-Mp-Alg" secondAttribute="top" constant="22" id="Doa-me-b0b"/>
+                                    <constraint firstItem="5qy-5Q-lJz" firstAttribute="leading" secondItem="a7j-Mp-Alg" secondAttribute="leading" constant="8" id="EH6-lZ-0Ad"/>
+                                    <constraint firstItem="B9j-aW-i0o" firstAttribute="leading" secondItem="5qy-5Q-lJz" secondAttribute="trailing" constant="5" id="Jc2-Y7-PxV"/>
+                                    <constraint firstAttribute="height" constant="70" id="Z4i-Mx-w9L"/>
+                                    <constraint firstAttribute="trailing" secondItem="B9j-aW-i0o" secondAttribute="trailing" constant="10" id="wBg-cb-WY4"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A3z-aM-HMF"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8pZ-aJ-dd4">
+                                <rect key="frame" x="7" y="139" width="590" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8k-Cz-OgW">
+                                        <rect key="frame" x="0.0" y="0.0" width="590" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type SSID here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u5A-ei-UvO">
+                                        <rect key="frame" x="0.0" y="31" width="590" height="37"/>
+                                        <color key="backgroundColor" red="0.94764397909999998" green="0.94764397909999998" blue="0.94764397909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMx-Up-zdo">
+                                        <rect key="frame" x="0.0" y="78" width="590" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Password here " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqO-B3-RTd">
+                                        <rect key="frame" x="0.0" y="109" width="590" height="37"/>
+                                        <color key="backgroundColor" red="0.94764397909999998" green="0.94764397909999998" blue="0.94764397909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="oLJ-P2-WYP">
+                                        <rect key="frame" x="0.0" y="156" width="590" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkj-Q3-WLQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HcV-0G-2f2">
+                                                <rect key="frame" x="97" y="0.0" width="493" height="45"/>
+                                                <segments>
+                                                    <segment title="WPA/WPA2"/>
+                                                    <segment title="WEP" width="60"/>
+                                                    <segment title="None" width="60"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="setValueTypeNetwork:" destination="Qho-wy-hUQ" eventType="valueChanged" id="FpV-cq-0aR"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8bE-mB-2cW"/>
+                                    <constraint firstAttribute="width" constant="500" id="OK2-nG-21h"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OK2-nG-21h"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8pZ-aJ-dd4" firstAttribute="leading" secondItem="dQf-ch-JAJ" secondAttribute="leading" constant="5" id="2uU-ay-fhw"/>
+                            <constraint firstItem="a7j-Mp-Alg" firstAttribute="leading" secondItem="dQf-ch-JAJ" secondAttribute="leading" id="DNo-Yc-Xki"/>
+                            <constraint firstItem="a7j-Mp-Alg" firstAttribute="top" secondItem="cwl-Gw-ZxJ" secondAttribute="bottom" id="ErB-8Y-dx8"/>
+                            <constraint firstItem="8pZ-aJ-dd4" firstAttribute="top" secondItem="a7j-Mp-Alg" secondAttribute="bottom" constant="20" id="Ogi-Zy-Hz2"/>
+                            <constraint firstAttribute="trailing" secondItem="8pZ-aJ-dd4" secondAttribute="trailing" constant="5" id="WJZ-LM-Gsg"/>
+                            <constraint firstAttribute="trailing" secondItem="a7j-Mp-Alg" secondAttribute="trailing" id="eTR-0v-SLJ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Wifi Network" id="cYt-6K-Qrp">
+                        <barButtonItem key="leftBarButtonItem" image="back" style="plain" id="ngg-vk-pRO">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="1460878359_Grid" style="done" id="vIL-4L-QU8">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="createQRButton" destination="B9j-aW-i0o" id="vEz-Kx-RC5"/>
+                        <outlet property="networkEncyptionType" destination="HcV-0G-2f2" id="hMy-1p-kh3"/>
+                        <outlet property="passwordWifiTextField" destination="AqO-B3-RTd" id="J7s-hr-2K9"/>
+                        <outlet property="ssidWifi" destination="u5A-ei-UvO" id="C85-yj-ZDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W66-ea-nas" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4520" y="485"/>
+        </scene>
+        <!--Wifi Network-->
+        <scene sceneID="fVf-uO-JEx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5hU-A1-R0H" userLabel="Wifi Network" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="W0c-0u-Hbd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IHO-ue-5AA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17959267404393842" green="0.55552601439790572" blue="0.039600464398553144" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qho-wy-hUQ" kind="relationship" relationship="rootViewController" id="XDe-9q-PPo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2Z-SZ-PKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3872" y="485"/>
+        </scene>
+        <!--QR code-->
+        <scene sceneID="yba-jz-dct">
+            <objects>
+                <viewController storyboardIdentifier="qrcodeVC" title="QR code" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xe0-oS-aBo" userLabel="QR code" customClass="QRcodeVC" customModule="BarCodeWifi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B0E-Wh-cCZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="X1w-sD-PU0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G5s-K1-de4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADR-Cp-D2G">
+                                <rect key="frame" x="0.0" y="64" width="600" height="67"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmw-o2-yVW" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                        <rect key="frame" x="274" y="22" width="52" height="45"/>
+                                        <color key="backgroundColor" red="0.32328400359999998" green="1" blue="0.071284626409999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lJE-DC-6lz"/>
+                                            <constraint firstAttribute="width" constant="50" id="peE-N0-sNX"/>
+                                        </constraints>
+                                        <state key="normal" image="encryption"/>
+                                        <connections>
+                                            <action selector="encryption:" destination="Xe0-oS-aBo" eventType="touchUpInside" id="2yh-Hu-1cq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94764397909999998" green="0.94764397909999998" blue="0.94764397909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Rmw-o2-yVW" firstAttribute="centerX" secondItem="ADR-Cp-D2G" secondAttribute="centerX" id="Bhd-C9-fga"/>
+                                    <constraint firstItem="Rmw-o2-yVW" firstAttribute="top" secondItem="ADR-Cp-D2G" secondAttribute="top" constant="20" id="MDJ-ms-FvY"/>
+                                    <constraint firstAttribute="height" constant="70" id="S5k-Np-pTI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5SD-I4-J0M" customClass="MaterialView" customModule="BarCodeWifi" customModuleProvider="target">
+                                <rect key="frame" x="35" y="146" width="531" height="389"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zj4-OQ-eGO">
+                                        <rect key="frame" x="145" y="78" width="240" height="233"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="13p-C4-xO3"/>
+                                            <constraint firstAttribute="width" constant="150" id="gCD-aI-v6h"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Zj4-OQ-eGO" firstAttribute="centerX" secondItem="5SD-I4-J0M" secondAttribute="centerX" id="1GG-U4-A87"/>
+                                    <constraint firstItem="Zj4-OQ-eGO" firstAttribute="centerY" secondItem="5SD-I4-J0M" secondAttribute="centerY" id="O0L-Ed-WUF"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNX-Cj-Wvw" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                <rect key="frame" x="275" y="543" width="51" height="49"/>
+                                <color key="backgroundColor" red="0.32328400359999998" green="1" blue="0.071284626409999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NWE-1E-CRI"/>
+                                    <constraint firstAttribute="width" constant="50" id="c6x-hb-ixT"/>
+                                    <constraint firstAttribute="width" constant="64" id="fwJ-bD-t3s"/>
+                                    <constraint firstAttribute="width" constant="64" id="mtc-fG-Tfw"/>
+                                </constraints>
+                                <state key="normal" image="save"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fwJ-bD-t3s"/>
+                                        <exclude reference="mtc-fG-Tfw"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="saveQRcode:" destination="Xe0-oS-aBo" eventType="touchUpInside" id="twb-fM-1jx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94764397909999998" green="0.94764397909999998" blue="0.94764397909999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ADR-Cp-D2G" firstAttribute="top" secondItem="B0E-Wh-cCZ" secondAttribute="bottom" id="2vA-qh-QRp"/>
+                            <constraint firstItem="5SD-I4-J0M" firstAttribute="top" secondItem="ADR-Cp-D2G" secondAttribute="bottom" constant="10" id="Eqk-tJ-xwV"/>
+                            <constraint firstItem="5SD-I4-J0M" firstAttribute="leading" secondItem="G5s-K1-de4" secondAttribute="leading" constant="5" id="GFG-Fb-c02"/>
+                            <constraint firstItem="ADR-Cp-D2G" firstAttribute="leading" secondItem="G5s-K1-de4" secondAttribute="leading" id="Pfq-0X-JEj"/>
+                            <constraint firstAttribute="trailing" secondItem="ADR-Cp-D2G" secondAttribute="trailing" id="YJ3-Om-O5G"/>
+                            <constraint firstItem="X1w-sD-PU0" firstAttribute="top" secondItem="ZNX-Cj-Wvw" secondAttribute="bottom" constant="20" id="b6S-Mq-3tv"/>
+                            <constraint firstItem="ZNX-Cj-Wvw" firstAttribute="top" secondItem="5SD-I4-J0M" secondAttribute="bottom" constant="10" id="bTZ-um-nNf"/>
+                            <constraint firstAttribute="trailing" secondItem="5SD-I4-J0M" secondAttribute="trailing" constant="5" id="p9e-Jb-rBY"/>
+                            <constraint firstItem="ZNX-Cj-Wvw" firstAttribute="centerX" secondItem="G5s-K1-de4" secondAttribute="centerX" id="xtV-2F-5tf"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="QR code" id="tRe-mh-jwL">
+                        <barButtonItem key="leftBarButtonItem" image="back" style="plain" id="xUd-P3-xo8">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="1460878359_Grid" style="done" id="9Zx-3T-xxD">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="qrcodeImage" destination="Zj4-OQ-eGO" id="JoE-pH-i2T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dc-m9-BOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5854" y="485"/>
+        </scene>
+        <!--QR code-->
+        <scene sceneID="Ehz-2M-2ZO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8E9-w4-6Im" userLabel="QR code" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="AsJ-li-je8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3C8-U4-hDS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17959267400000001" green="0.55552601440000005" blue="0.0396004644" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xe0-oS-aBo" kind="relationship" relationship="rootViewController" id="LZa-iy-xTI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WK5-EZ-Xnu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5206" y="485"/>
+        </scene>
+        <!--QR code-->
+        <scene sceneID="d7V-8O-Ad9">
+            <objects>
+                <viewController title="QR code" id="C2s-P8-HNL" userLabel="QR code" customClass="MenuVC" customModule="BarCodeWifi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9yv-QW-OSV"/>
+                        <viewControllerLayoutGuide type="bottom" id="YlW-se-pT5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KOM-FU-DFV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2b-lm-UcU">
+                                <rect key="frame" x="0.0" y="64" width="600" height="67"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzc-Jq-ayL" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                        <rect key="frame" x="274" y="22" width="52" height="45"/>
+                                        <color key="backgroundColor" red="0.32328400359999998" green="1" blue="0.071284626409999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="GxN-9U-Nds"/>
+                                            <constraint firstAttribute="height" constant="50" id="yEg-d6-qXT"/>
+                                        </constraints>
+                                        <state key="normal" image="encryption"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94764397909999998" green="0.94764397909999998" blue="0.94764397909999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jzc-Jq-ayL" firstAttribute="centerX" secondItem="K2b-lm-UcU" secondAttribute="centerX" id="1Iq-4j-tDe"/>
+                                    <constraint firstItem="jzc-Jq-ayL" firstAttribute="top" secondItem="K2b-lm-UcU" secondAttribute="top" constant="20" id="CF4-Qa-fy8"/>
+                                    <constraint firstAttribute="height" constant="70" id="fcs-Zo-uEN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-Wb-o8n" customClass="MaterialView" customModule="BarCodeWifi" customModuleProvider="target">
+                                <rect key="frame" x="35" y="146" width="531" height="389"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="qrcodeModal" translatesAutoresizingMaskIntoConstraints="NO" id="y43-wh-YVV">
+                                        <rect key="frame" x="145" y="78" width="240" height="233"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="GFF-Hy-gPQ"/>
+                                            <constraint firstAttribute="width" constant="150" id="oOV-zN-3A2"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="y43-wh-YVV" firstAttribute="centerX" secondItem="9cn-Wb-o8n" secondAttribute="centerX" id="4ZI-Mx-kLM"/>
+                                    <constraint firstItem="y43-wh-YVV" firstAttribute="centerY" secondItem="9cn-Wb-o8n" secondAttribute="centerY" id="zTr-yd-Nrd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9y-sy-bT9" customClass="MaterialButton" customModule="BarCodeWifi" customModuleProvider="target">
+                                <rect key="frame" x="275" y="543" width="51" height="49"/>
+                                <color key="backgroundColor" red="0.32328400359999998" green="1" blue="0.071284626409999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Edn-zw-oUU"/>
+                                    <constraint firstAttribute="width" constant="64" id="LPP-jR-BIX"/>
+                                    <constraint firstAttribute="height" constant="50" id="V1M-RA-uB4"/>
+                                    <constraint firstAttribute="width" constant="50" id="tFM-TH-zZJ"/>
+                                </constraints>
+                                <state key="normal" image="save"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Edn-zw-oUU"/>
+                                        <exclude reference="LPP-jR-BIX"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94764397909999998" green="0.94764397909999998" blue="0.94764397909999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K2b-lm-UcU" firstAttribute="leading" secondItem="KOM-FU-DFV" secondAttribute="leading" id="94Y-5Q-Woj"/>
+                            <constraint firstItem="K2b-lm-UcU" firstAttribute="top" secondItem="9yv-QW-OSV" secondAttribute="bottom" id="9j4-FK-pUg"/>
+                            <constraint firstAttribute="trailing" secondItem="9cn-Wb-o8n" secondAttribute="trailing" constant="5" id="FIT-dT-px0"/>
+                            <constraint firstItem="9cn-Wb-o8n" firstAttribute="top" secondItem="K2b-lm-UcU" secondAttribute="bottom" constant="10" id="IxB-DP-uFi"/>
+                            <constraint firstAttribute="trailing" secondItem="K2b-lm-UcU" secondAttribute="trailing" id="SWV-xS-YlF"/>
+                            <constraint firstItem="b9y-sy-bT9" firstAttribute="centerX" secondItem="KOM-FU-DFV" secondAttribute="centerX" id="SbY-He-uLK"/>
+                            <constraint firstItem="9cn-Wb-o8n" firstAttribute="leading" secondItem="KOM-FU-DFV" secondAttribute="leading" constant="5" id="SiI-Ta-gFU"/>
+                            <constraint firstItem="YlW-se-pT5" firstAttribute="top" secondItem="b9y-sy-bT9" secondAttribute="bottom" constant="20" id="aHJ-9p-7VA"/>
+                            <constraint firstItem="b9y-sy-bT9" firstAttribute="top" secondItem="9cn-Wb-o8n" secondAttribute="bottom" constant="10" id="b1e-GZ-kBW"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="QR code" id="dqP-N5-2Cb">
+                        <barButtonItem key="leftBarButtonItem" image="back" style="plain" id="rab-hQ-Xc8">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="1460878359_Grid" style="done" id="oGi-m7-ZjA">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhy-ga-jD7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7328" y="473"/>
+        </scene>
+        <!--QR code-->
+        <scene sceneID="MBg-7A-bTf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zw6-0e-rwT" userLabel="QR code" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="aUv-iO-AdQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dx2-up-XYw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17959267400000001" green="0.55552601440000005" blue="0.0396004644" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="C2s-P8-HNL" kind="relationship" relationship="rootViewController" id="hoA-NO-nHC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvj-8I-zNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6680" y="473"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1460878359_Grid" width="30" height="30"/>
+        <image name="QuestionMark" width="60" height="60"/>
+        <image name="back" width="44" height="30"/>
+        <image name="create" width="64" height="64"/>
+        <image name="createQRcode" width="80" height="51"/>
+        <image name="encryption" width="50" height="50"/>
+        <image name="flash_bang" width="60" height="60"/>
+        <image name="help" width="50" height="50"/>
+        <image name="history" width="64" height="64"/>
+        <image name="more" width="64" height="64"/>
+        <image name="qrcodeModal" width="150" height="150"/>
+        <image name="save" width="64" height="64"/>
+        <image name="scan" width="64" height="64"/>
+        <image name="setting" width="64" height="59"/>
+        <image name="video_camera" width="80" height="80"/>
+    </resources>
 </document>

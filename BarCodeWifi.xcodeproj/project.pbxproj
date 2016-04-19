@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32334B151CC344C90003B570 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32334B141CC344C90003B570 /* MenuVC.swift */; };
+		32334B171CC346DE0003B570 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32334B161CC346DE0003B570 /* MaterialView.swift */; };
 		323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2CB1CC1A7200066B39A /* AppDelegate.swift */; };
 		323BD2CE1CC1A7200066B39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2CD1CC1A7200066B39A /* ViewController.swift */; };
 		323BD2D11CC1A7200066B39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2CF1CC1A7200066B39A /* Main.storyboard */; };
@@ -14,6 +16,16 @@
 		323BD2D61CC1A7200066B39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */; };
 		323BD2E11CC1A7200066B39A /* BarCodeWifiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2E01CC1A7200066B39A /* BarCodeWifiTests.swift */; };
 		323BD2EC1CC1A7200066B39A /* BarCodeWifiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2EB1CC1A7200066B39A /* BarCodeWifiUITests.swift */; };
+		323BD2FA1CC1C4310066B39A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323BD2F91CC1C4310066B39A /* AVFoundation.framework */; };
+		323BD3041CC1C61D0066B39A /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD3031CC1C61D0066B39A /* MaterialButton.swift */; };
+		323BD3061CC1C6A40066B39A /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD3051CC1C6A40066B39A /* Contants.swift */; };
+		324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */; };
+		3279281B1CC4EF4E0044C9DD /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 327928111CC4EF340044C9DD /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		329E621C1CC382DD00DAC906 /* WifiNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */; };
+		329E62201CC3831F00DAC906 /* QRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E621F1CC3831F00DAC906 /* QRcodeVC.swift */; };
+		329F91981CC3E84B009823D2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F91971CC3E84B009823D2 /* Extension.swift */; };
+		32CDD36B1CC5CB33006F33C2 /* ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD36A1CC5CB33006F33C2 /* ex.png */; };
+		32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +43,70 @@
 			remoteGlobalIDString = 323BD2C71CC1A7200066B39A;
 			remoteInfo = BarCodeWifi;
 		};
+		327928101CC4EF340044C9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = "CryptoSwift iOS";
+		};
+		327928121CC4EF340044C9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5596BDBB1BC8F220007E38D5;
+			remoteInfo = "CryptoSwift watchOS";
+		};
+		327928141CC4EF340044C9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75DF77721BC8EB59006E9520;
+			remoteInfo = "CryptoSwift OSX";
+		};
+		327928161CC4EF340044C9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 75D614BF1BD844F2001358B2;
+			remoteInfo = "CryptoSwift tvOS";
+		};
+		327928181CC4EF340044C9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = CryptoSwiftTests;
+		};
+		3279281C1CC4EF4E0044C9DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = "CryptoSwift iOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		324D74911CC47C17004200F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3279281B1CC4EF4E0044C9DD /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		32334B141CC344C90003B570 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuVC.swift; path = Controller/MenuVC.swift; sourceTree = "<group>"; };
+		32334B161CC346DE0003B570 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialView.swift; path = View/MaterialView.swift; sourceTree = "<group>"; };
 		323BD2C81CC1A7200066B39A /* BarCodeWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCodeWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		323BD2CB1CC1A7200066B39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		323BD2CD1CC1A7200066B39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		323BD2CD1CC1A7200066B39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = BarCodeWifi/ViewController.swift; sourceTree = "<group>"; };
 		323BD2D01CC1A7200066B39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		323BD2D21CC1A7200066B39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		323BD2D51CC1A7200066B39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +117,19 @@
 		323BD2E71CC1A7200066B39A /* BarCodeWifiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeWifiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		323BD2EB1CC1A7200066B39A /* BarCodeWifiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeWifiUITests.swift; sourceTree = "<group>"; };
 		323BD2ED1CC1A7200066B39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323BD2F91CC1C4310066B39A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		323BD3031CC1C61D0066B39A /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialButton.swift; path = View/MaterialButton.swift; sourceTree = "<group>"; };
+		323BD3051CC1C6A40066B39A /* Contants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contants.swift; path = Utils/Contants.swift; sourceTree = "<group>"; };
+		32431F421CC537A0005F3C8B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPhotoAlbum.swift; path = Modal/CustomPhotoAlbum.swift; sourceTree = "<group>"; };
+		32507A521CC47A5200D11AA9 /* BarCodeWifiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BarCodeWifiHeader.h; path = Utils/BarCodeWifiHeader.h; sourceTree = "<group>"; };
+		327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../../../Volumes/DATA/CryptoSwift-swift3/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
+		329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WifiNetworkVC.swift; path = Controller/WifiNetworkVC.swift; sourceTree = "<group>"; };
+		329E621F1CC3831F00DAC906 /* QRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRcodeVC.swift; path = Controller/QRcodeVC.swift; sourceTree = "<group>"; };
+		329E622F1CC3927600DAC906 /* HeaderBarCodeWifi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderBarCodeWifi.h; sourceTree = "<group>"; };
+		329F91971CC3E84B009823D2 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		32CDD36A1CC5CB33006F33C2 /* ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex.png; sourceTree = "<group>"; };
+		32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPCameraCustomAlbum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323BD2FA1CC1C4310066B39A /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +161,20 @@
 		323BD2BF1CC1A7200066B39A = {
 			isa = PBXGroup;
 			children = (
+				32431F421CC537A0005F3C8B /* AssetsLibrary.framework */,
+				329F91961CC3E822009823D2 /* Extension */,
+				329E622F1CC3927600DAC906 /* HeaderBarCodeWifi.h */,
+				323BD3021CC1C4CE0066B39A /* Utils */,
+				323BD3011CC1C4C50066B39A /* Sources */,
+				323BD3001CC1C4AE0066B39A /* Modal */,
+				323BD2FE1CC1C4A20066B39A /* View */,
+				323BD2FF1CC1C4A80066B39A /* Controller */,
+				323BD2FB1CC1C43B0066B39A /* Framwork */,
 				323BD2CA1CC1A7200066B39A /* BarCodeWifi */,
 				323BD2DF1CC1A7200066B39A /* BarCodeWifiTests */,
 				323BD2EA1CC1A7200066B39A /* BarCodeWifiUITests */,
 				323BD2C91CC1A7200066B39A /* Products */,
+				327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				323BD2CB1CC1A7200066B39A /* AppDelegate.swift */,
-				323BD2CD1CC1A7200066B39A /* ViewController.swift */,
 				323BD2CF1CC1A7200066B39A /* Main.storyboard */,
 				323BD2D21CC1A7200066B39A /* Assets.xcassets */,
 				323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */,
@@ -125,6 +218,80 @@
 			path = BarCodeWifiUITests;
 			sourceTree = "<group>";
 		};
+		323BD2FB1CC1C43B0066B39A /* Framwork */ = {
+			isa = PBXGroup;
+			children = (
+				323BD2F91CC1C4310066B39A /* AVFoundation.framework */,
+			);
+			name = Framwork;
+			sourceTree = "<group>";
+		};
+		323BD2FE1CC1C4A20066B39A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				323BD3031CC1C61D0066B39A /* MaterialButton.swift */,
+				32334B161CC346DE0003B570 /* MaterialView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		323BD2FF1CC1C4A80066B39A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				323BD2CD1CC1A7200066B39A /* ViewController.swift */,
+				32334B141CC344C90003B570 /* MenuVC.swift */,
+				329E621B1CC382DD00DAC906 /* WifiNetworkVC.swift */,
+				329E621F1CC3831F00DAC906 /* QRcodeVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		323BD3001CC1C4AE0066B39A /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		323BD3011CC1C4C50066B39A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CDD36A1CC5CB33006F33C2 /* ex.png */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		323BD3021CC1C4CE0066B39A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */,
+				323BD3051CC1C6A40066B39A /* Contants.swift */,
+				32507A521CC47A5200D11AA9 /* BarCodeWifiHeader.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		327928091CC4EF340044C9DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327928111CC4EF340044C9DD /* CryptoSwift.framework */,
+				327928131CC4EF340044C9DD /* CryptoSwift.framework */,
+				327928151CC4EF340044C9DD /* CryptoSwift.framework */,
+				327928171CC4EF340044C9DD /* CryptoSwift.framework */,
+				327928191CC4EF340044C9DD /* CryptoSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		329F91961CC3E822009823D2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				329F91971CC3E84B009823D2 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +302,12 @@
 				323BD2C41CC1A7200066B39A /* Sources */,
 				323BD2C51CC1A7200066B39A /* Frameworks */,
 				323BD2C61CC1A7200066B39A /* Resources */,
+				324D74911CC47C17004200F9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3279281D1CC4EF4E0044C9DD /* PBXTargetDependency */,
 			);
 			name = BarCodeWifi;
 			productName = BarCodeWifi;
@@ -215,6 +384,12 @@
 			mainGroup = 323BD2BF1CC1A7200066B39A;
 			productRefGroup = 323BD2C91CC1A7200066B39A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 327928091CC4EF340044C9DD /* Products */;
+					ProjectRef = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				323BD2C71CC1A7200066B39A /* BarCodeWifi */,
@@ -224,6 +399,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		327928111CC4EF340044C9DD /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 327928101CC4EF340044C9DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		327928131CC4EF340044C9DD /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 327928121CC4EF340044C9DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		327928151CC4EF340044C9DD /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 327928141CC4EF340044C9DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		327928171CC4EF340044C9DD /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 327928161CC4EF340044C9DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		327928191CC4EF340044C9DD /* CryptoSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CryptoSwiftTests.xctest;
+			remoteRef = 327928181CC4EF340044C9DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		323BD2C61CC1A7200066B39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -231,6 +444,7 @@
 			files = (
 				323BD2D61CC1A7200066B39A /* LaunchScreen.storyboard in Resources */,
 				323BD2D31CC1A7200066B39A /* Assets.xcassets in Resources */,
+				32CDD36B1CC5CB33006F33C2 /* ex.png in Resources */,
 				323BD2D11CC1A7200066B39A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +470,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329F91981CC3E84B009823D2 /* Extension.swift in Sources */,
+				329E62201CC3831F00DAC906 /* QRcodeVC.swift in Sources */,
 				323BD2CE1CC1A7200066B39A /* ViewController.swift in Sources */,
+				324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */,
 				323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */,
+				323BD3041CC1C61D0066B39A /* MaterialButton.swift in Sources */,
+				32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */,
+				329E621C1CC382DD00DAC906 /* WifiNetworkVC.swift in Sources */,
+				32334B171CC346DE0003B570 /* MaterialView.swift in Sources */,
+				323BD3061CC1C6A40066B39A /* Contants.swift in Sources */,
+				32334B151CC344C90003B570 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +512,11 @@
 			isa = PBXTargetDependency;
 			target = 323BD2C71CC1A7200066B39A /* BarCodeWifi */;
 			targetProxy = 323BD2E81CC1A7200066B39A /* PBXContainerItemProxy */;
+		};
+		3279281D1CC4EF4E0044C9DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CryptoSwift iOS";
+			targetProxy = 3279281C1CC4EF4E0044C9DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,7 +629,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framwork",
+				);
 				INFOPLIST_FILE = BarCodeWifi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,7 +647,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framwork",
+				);
 				INFOPLIST_FILE = BarCodeWifi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +726,7 @@
 				323BD2F21CC1A7200066B39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		323BD2F31CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +735,7 @@
 				323BD2F51CC1A7200066B39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		323BD2F61CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +744,7 @@
 				323BD2F81CC1A7200066B39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
