@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftString
 
 class PlainTextVC: UIViewController {
 
@@ -33,30 +34,54 @@ class PlainTextVC: UIViewController {
         var ssid:String = ""
         var pass:String = ""
         var encrypt:String = ""
-        let star: String = "+"
-        var l = 0
         var temp:String = ""
-        if (dataQRcodeScan.rangeOfString(" WIFI:S:") != nil) {
-            for i in dataQRcodeScan.characters {
-                NSLog("a[i]= \(i)")
-                
-                ssid =  ssid + String(i)
-                if star == String(i) && l == 0 {
-                    l += 1
-                    pass = pass + String(i)
-                } else if star == String(i) && l == 1{
-                    encrypt = encrypt + String(i)
-                }
-            }
+        
+        if (dataQRcodeScan.rangeOfString("WIFI:S:") != nil) {
+            dataQRcodeScan = dataQRcodeScan.chompLeft("WIFI:S:")
+            NSLog("dataQRcode = \(dataQRcodeScan)")
+            ssid = getStringFromStringByCharacter(dataQRcodeScan, character: ";")
+            NSLog("ssid = \(ssid)")
+            dataQRcodeScan = dataQRcodeScan.chompLeft(ssid + ";T:")
+            NSLog("dataQRcode = \(dataQRcodeScan)")
+            encrypt = getStringFromStringByCharacter(dataQRcodeScan, character: ";")
+            NSLog("encrypt = \(encrypt)")
+            NSLog("ssid = \(ssid)")
+            dataQRcodeScan = dataQRcodeScan.chompLeft(encrypt + ";P:")
+            NSLog("dataQRcode = \(dataQRcodeScan)")
+            pass = dataQRcodeScan.chompRight(";;")
+            NSLog("encrypt +  = \(encrypt + ";P:")")
+            firstLabelIToShow.text = "Network Name: " + ssid
+            secondLabelToShow.text = "Password: " + pass
+            thirdLabelToShow.text = "Type: " + encrypt
+        } else {
+            firstLabelIToShow.text = dataQRcodeScan
+            secondLabelToShow.text = ""
+            thirdLabelToShow.text = ""
+        }
+    }
+    
+    func getStringFromStringByCharacter(totalString: String, character: String) -> String {
+        var result:String = ""
+        let k:Bool = false
+        
+        for i in 0...totalString.characters.count {
+            NSLog("String(totalString[i]) = \(String(totalString[i]))")
+            NSLog("i ====== \(i)")
+            let a = totalString.substringWithRange(0, location: i)
+            NSLog("a = \(a)")
+            if String(totalString[i]) == character && k == false {
+                k == true
+                result = totalString.substringWithRange(0, location: i)
+                NSLog("result = \(result)")
+                break
 
+            }
+            
+            
         }
         
-        firstLabelIToShow.text = "Network Name: " + ssid
-        secondLabelToShow.text = "Password: " + pass
-        thirdLabelToShow.text = "Type: " + encrypt
-        
-
-        
+        return result
+//
     }
     
     func setData(data: String) {
@@ -68,17 +93,7 @@ class PlainTextVC: UIViewController {
 //        print(timestamp)
         return timestamp
     }
-    func correct(str:String, orig:String, repl:String) -> String {
-        var s = NSMutableString(string:str)
-        let r = NSRegularExpression(
-            pattern: "\\b\(orig)\\b",
-            options: .CaseInsensitive, error: nil)!
-        r.replaceMatchesInString(
-            s, options: nil, range: NSMakeRange(0,s.length),
-            withTemplate: repl)
-        return s as String
-    }
-
+    
     
     
     @IBAction func showQRCode(sender: AnyObject) {

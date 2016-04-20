@@ -1,0 +1,16 @@
+PODS:
+  - QRCode (0.5)
+  - SwiftQRCode (2.0.1)
+  - SwiftString (0.5)
+
+DEPENDENCIES:
+  - QRCode
+  - SwiftQRCode
+  - SwiftString
+
+SPEC CHECKSUMS:
+  QRCode: a249ed747aeb0f4bf5f9c58b5b001b6b3bc80073
+  SwiftQRCode: ce939b2f3ceba3a4b89a99c981cba70604e480cf
+  SwiftString: ec9c31c55b2aa147a1154f5f5f8483dc71e3165f
+
+COCOAPODS: 0.39.0

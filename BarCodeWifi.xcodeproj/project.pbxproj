@@ -1,756 +1,1777 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		320619271CC60BF7003A9E23 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320619231CC60BF7003A9E23 /* MenuVC.swift */; };
-		320619281CC60BF7003A9E23 /* PlainTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320619241CC60BF7003A9E23 /* PlainTextVC.swift */; };
-		320619291CC60BF7003A9E23 /* QRcodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320619251CC60BF7003A9E23 /* QRcodeVC.swift */; };
-		3206192A1CC60BF7003A9E23 /* WifiNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320619261CC60BF7003A9E23 /* WifiNetworkVC.swift */; };
-		32334B171CC346DE0003B570 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32334B161CC346DE0003B570 /* MaterialView.swift */; };
-		323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2CB1CC1A7200066B39A /* AppDelegate.swift */; };
-		323BD2D11CC1A7200066B39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2CF1CC1A7200066B39A /* Main.storyboard */; };
-		323BD2D31CC1A7200066B39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2D21CC1A7200066B39A /* Assets.xcassets */; };
-		323BD2D61CC1A7200066B39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */; };
-		323BD2E11CC1A7200066B39A /* BarCodeWifiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2E01CC1A7200066B39A /* BarCodeWifiTests.swift */; };
-		323BD2EC1CC1A7200066B39A /* BarCodeWifiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD2EB1CC1A7200066B39A /* BarCodeWifiUITests.swift */; };
-		323BD2FA1CC1C4310066B39A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323BD2F91CC1C4310066B39A /* AVFoundation.framework */; };
-		323BD3041CC1C61D0066B39A /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD3031CC1C61D0066B39A /* MaterialButton.swift */; };
-		323BD3061CC1C6A40066B39A /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323BD3051CC1C6A40066B39A /* Contants.swift */; };
-		324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */; };
-		3279281B1CC4EF4E0044C9DD /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 327928111CC4EF340044C9DD /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		329F91981CC3E84B009823D2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F91971CC3E84B009823D2 /* Extension.swift */; };
-		32BD4D4F1CC6226000D32C1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD4D4E1CC6226000D32C1A /* ViewController.swift */; };
-		32CDD36B1CC5CB33006F33C2 /* ex.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD36A1CC5CB33006F33C2 /* ex.png */; };
-		32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		323BD2DD1CC1A7200066B39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 323BD2C01CC1A7200066B39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 323BD2C71CC1A7200066B39A;
-			remoteInfo = BarCodeWifi;
-		};
-		323BD2E81CC1A7200066B39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 323BD2C01CC1A7200066B39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 323BD2C71CC1A7200066B39A;
-			remoteInfo = BarCodeWifi;
-		};
-		327928101CC4EF340044C9DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 754BE45519693E190098E6F3;
-			remoteInfo = "CryptoSwift iOS";
-		};
-		327928121CC4EF340044C9DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5596BDBB1BC8F220007E38D5;
-			remoteInfo = "CryptoSwift watchOS";
-		};
-		327928141CC4EF340044C9DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75DF77721BC8EB59006E9520;
-			remoteInfo = "CryptoSwift OSX";
-		};
-		327928161CC4EF340044C9DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 75D614BF1BD844F2001358B2;
-			remoteInfo = "CryptoSwift tvOS";
-		};
-		327928181CC4EF340044C9DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 754BE46019693E190098E6F3;
-			remoteInfo = CryptoSwiftTests;
-		};
-		3279281C1CC4EF4E0044C9DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 754BE45419693E190098E6F3;
-			remoteInfo = "CryptoSwift iOS";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		324D74911CC47C17004200F9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3279281B1CC4EF4E0044C9DD /* CryptoSwift.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		320619231CC60BF7003A9E23 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
-		320619241CC60BF7003A9E23 /* PlainTextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainTextVC.swift; sourceTree = "<group>"; };
-		320619251CC60BF7003A9E23 /* QRcodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRcodeVC.swift; sourceTree = "<group>"; };
-		320619261CC60BF7003A9E23 /* WifiNetworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiNetworkVC.swift; sourceTree = "<group>"; };
-		32334B161CC346DE0003B570 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialView.swift; path = View/MaterialView.swift; sourceTree = "<group>"; };
-		323BD2C81CC1A7200066B39A /* BarCodeWifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCodeWifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		323BD2CB1CC1A7200066B39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		323BD2D01CC1A7200066B39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		323BD2D21CC1A7200066B39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		323BD2D51CC1A7200066B39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		323BD2D71CC1A7200066B39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		323BD2DC1CC1A7200066B39A /* BarCodeWifiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeWifiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		323BD2E01CC1A7200066B39A /* BarCodeWifiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeWifiTests.swift; sourceTree = "<group>"; };
-		323BD2E21CC1A7200066B39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		323BD2E71CC1A7200066B39A /* BarCodeWifiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeWifiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		323BD2EB1CC1A7200066B39A /* BarCodeWifiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeWifiUITests.swift; sourceTree = "<group>"; };
-		323BD2ED1CC1A7200066B39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		323BD2F91CC1C4310066B39A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		323BD3031CC1C61D0066B39A /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialButton.swift; path = View/MaterialButton.swift; sourceTree = "<group>"; };
-		323BD3051CC1C6A40066B39A /* Contants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contants.swift; path = Utils/Contants.swift; sourceTree = "<group>"; };
-		32431F421CC537A0005F3C8B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomPhotoAlbum.swift; path = Modal/CustomPhotoAlbum.swift; sourceTree = "<group>"; };
-		32507A521CC47A5200D11AA9 /* BarCodeWifiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BarCodeWifiHeader.h; path = Utils/BarCodeWifiHeader.h; sourceTree = "<group>"; };
-		327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = "../../../Volumes/DATA/CryptoSwift-swift3/CryptoSwift.xcodeproj"; sourceTree = "<group>"; };
-		329E622F1CC3927600DAC906 /* HeaderBarCodeWifi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderBarCodeWifi.h; sourceTree = "<group>"; };
-		329F91971CC3E84B009823D2 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		32BD4D4E1CC6226000D32C1A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		32CDD36A1CC5CB33006F33C2 /* ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex.png; sourceTree = "<group>"; };
-		32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPCameraCustomAlbum.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		323BD2C51CC1A7200066B39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				323BD2FA1CC1C4310066B39A /* AVFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323BD2D91CC1A7200066B39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323BD2E41CC1A7200066B39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		320619221CC60BF7003A9E23 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				32BD4D4E1CC6226000D32C1A /* ViewController.swift */,
-				320619231CC60BF7003A9E23 /* MenuVC.swift */,
-				320619241CC60BF7003A9E23 /* PlainTextVC.swift */,
-				320619251CC60BF7003A9E23 /* QRcodeVC.swift */,
-				320619261CC60BF7003A9E23 /* WifiNetworkVC.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		323BD2BF1CC1A7200066B39A = {
-			isa = PBXGroup;
-			children = (
-				32431F421CC537A0005F3C8B /* AssetsLibrary.framework */,
-				329F91961CC3E822009823D2 /* Extension */,
-				329E622F1CC3927600DAC906 /* HeaderBarCodeWifi.h */,
-				323BD3021CC1C4CE0066B39A /* Utils */,
-				323BD3011CC1C4C50066B39A /* Sources */,
-				323BD3001CC1C4AE0066B39A /* Modal */,
-				323BD2FE1CC1C4A20066B39A /* View */,
-				320619221CC60BF7003A9E23 /* Controller */,
-				323BD2FB1CC1C43B0066B39A /* Framwork */,
-				323BD2CA1CC1A7200066B39A /* BarCodeWifi */,
-				323BD2DF1CC1A7200066B39A /* BarCodeWifiTests */,
-				323BD2EA1CC1A7200066B39A /* BarCodeWifiUITests */,
-				323BD2C91CC1A7200066B39A /* Products */,
-				327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */,
-			);
-			sourceTree = "<group>";
-		};
-		323BD2C91CC1A7200066B39A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				323BD2C81CC1A7200066B39A /* BarCodeWifi.app */,
-				323BD2DC1CC1A7200066B39A /* BarCodeWifiTests.xctest */,
-				323BD2E71CC1A7200066B39A /* BarCodeWifiUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		323BD2CA1CC1A7200066B39A /* BarCodeWifi */ = {
-			isa = PBXGroup;
-			children = (
-				323BD2CB1CC1A7200066B39A /* AppDelegate.swift */,
-				323BD2CF1CC1A7200066B39A /* Main.storyboard */,
-				323BD2D21CC1A7200066B39A /* Assets.xcassets */,
-				323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */,
-				323BD2D71CC1A7200066B39A /* Info.plist */,
-			);
-			path = BarCodeWifi;
-			sourceTree = "<group>";
-		};
-		323BD2DF1CC1A7200066B39A /* BarCodeWifiTests */ = {
-			isa = PBXGroup;
-			children = (
-				323BD2E01CC1A7200066B39A /* BarCodeWifiTests.swift */,
-				323BD2E21CC1A7200066B39A /* Info.plist */,
-			);
-			path = BarCodeWifiTests;
-			sourceTree = "<group>";
-		};
-		323BD2EA1CC1A7200066B39A /* BarCodeWifiUITests */ = {
-			isa = PBXGroup;
-			children = (
-				323BD2EB1CC1A7200066B39A /* BarCodeWifiUITests.swift */,
-				323BD2ED1CC1A7200066B39A /* Info.plist */,
-			);
-			path = BarCodeWifiUITests;
-			sourceTree = "<group>";
-		};
-		323BD2FB1CC1C43B0066B39A /* Framwork */ = {
-			isa = PBXGroup;
-			children = (
-				323BD2F91CC1C4310066B39A /* AVFoundation.framework */,
-			);
-			name = Framwork;
-			sourceTree = "<group>";
-		};
-		323BD2FE1CC1C4A20066B39A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				323BD3031CC1C61D0066B39A /* MaterialButton.swift */,
-				32334B161CC346DE0003B570 /* MaterialView.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		323BD3001CC1C4AE0066B39A /* Modal */ = {
-			isa = PBXGroup;
-			children = (
-				324D74BD1CC4D281004200F9 /* CustomPhotoAlbum.swift */,
-			);
-			name = Modal;
-			sourceTree = "<group>";
-		};
-		323BD3011CC1C4C50066B39A /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				32CDD36A1CC5CB33006F33C2 /* ex.png */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		323BD3021CC1C4CE0066B39A /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				32F6C2611CC5AF4500A36C39 /* VPCameraCustomAlbum.swift */,
-				323BD3051CC1C6A40066B39A /* Contants.swift */,
-				32507A521CC47A5200D11AA9 /* BarCodeWifiHeader.h */,
-			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
-		327928091CC4EF340044C9DD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				327928111CC4EF340044C9DD /* CryptoSwift.framework */,
-				327928131CC4EF340044C9DD /* CryptoSwift.framework */,
-				327928151CC4EF340044C9DD /* CryptoSwift.framework */,
-				327928171CC4EF340044C9DD /* CryptoSwift.framework */,
-				327928191CC4EF340044C9DD /* CryptoSwiftTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		329F91961CC3E822009823D2 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				329F91971CC3E84B009823D2 /* Extension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		323BD2C71CC1A7200066B39A /* BarCodeWifi */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 323BD2F01CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifi" */;
-			buildPhases = (
-				323BD2C41CC1A7200066B39A /* Sources */,
-				323BD2C51CC1A7200066B39A /* Frameworks */,
-				323BD2C61CC1A7200066B39A /* Resources */,
-				324D74911CC47C17004200F9 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3279281D1CC4EF4E0044C9DD /* PBXTargetDependency */,
-			);
-			name = BarCodeWifi;
-			productName = BarCodeWifi;
-			productReference = 323BD2C81CC1A7200066B39A /* BarCodeWifi.app */;
-			productType = "com.apple.product-type.application";
-		};
-		323BD2DB1CC1A7200066B39A /* BarCodeWifiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 323BD2F31CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiTests" */;
-			buildPhases = (
-				323BD2D81CC1A7200066B39A /* Sources */,
-				323BD2D91CC1A7200066B39A /* Frameworks */,
-				323BD2DA1CC1A7200066B39A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				323BD2DE1CC1A7200066B39A /* PBXTargetDependency */,
-			);
-			name = BarCodeWifiTests;
-			productName = BarCodeWifiTests;
-			productReference = 323BD2DC1CC1A7200066B39A /* BarCodeWifiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		323BD2E61CC1A7200066B39A /* BarCodeWifiUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 323BD2F61CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiUITests" */;
-			buildPhases = (
-				323BD2E31CC1A7200066B39A /* Sources */,
-				323BD2E41CC1A7200066B39A /* Frameworks */,
-				323BD2E51CC1A7200066B39A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				323BD2E91CC1A7200066B39A /* PBXTargetDependency */,
-			);
-			name = BarCodeWifiUITests;
-			productName = BarCodeWifiUITests;
-			productReference = 323BD2E71CC1A7200066B39A /* BarCodeWifiUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		323BD2C01CC1A7200066B39A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = mhtran;
-				TargetAttributes = {
-					323BD2C71CC1A7200066B39A = {
-						CreatedOnToolsVersion = 7.3;
-					};
-					323BD2DB1CC1A7200066B39A = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 323BD2C71CC1A7200066B39A;
-					};
-					323BD2E61CC1A7200066B39A = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 323BD2C71CC1A7200066B39A;
-					};
-				};
-			};
-			buildConfigurationList = 323BD2C31CC1A7200066B39A /* Build configuration list for PBXProject "BarCodeWifi" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 323BD2BF1CC1A7200066B39A;
-			productRefGroup = 323BD2C91CC1A7200066B39A /* Products */;
-			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 327928091CC4EF340044C9DD /* Products */;
-					ProjectRef = 327928081CC4EF340044C9DD /* CryptoSwift.xcodeproj */;
-				},
-			);
-			projectRoot = "";
-			targets = (
-				323BD2C71CC1A7200066B39A /* BarCodeWifi */,
-				323BD2DB1CC1A7200066B39A /* BarCodeWifiTests */,
-				323BD2E61CC1A7200066B39A /* BarCodeWifiUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		327928111CC4EF340044C9DD /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = 327928101CC4EF340044C9DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		327928131CC4EF340044C9DD /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = 327928121CC4EF340044C9DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		327928151CC4EF340044C9DD /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = 327928141CC4EF340044C9DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		327928171CC4EF340044C9DD /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = 327928161CC4EF340044C9DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		327928191CC4EF340044C9DD /* CryptoSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CryptoSwiftTests.xctest;
-			remoteRef = 327928181CC4EF340044C9DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
-/* Begin PBXResourcesBuildPhase section */
-		323BD2C61CC1A7200066B39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				323BD2D61CC1A7200066B39A /* LaunchScreen.storyboard in Resources */,
-				323BD2D31CC1A7200066B39A /* Assets.xcassets in Resources */,
-				32CDD36B1CC5CB33006F33C2 /* ex.png in Resources */,
-				323BD2D11CC1A7200066B39A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323BD2DA1CC1A7200066B39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323BD2E51CC1A7200066B39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		323BD2C41CC1A7200066B39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3206192A1CC60BF7003A9E23 /* WifiNetworkVC.swift in Sources */,
-				329F91981CC3E84B009823D2 /* Extension.swift in Sources */,
-				320619281CC60BF7003A9E23 /* PlainTextVC.swift in Sources */,
-				324D74BE1CC4D281004200F9 /* CustomPhotoAlbum.swift in Sources */,
-				323BD2CC1CC1A7200066B39A /* AppDelegate.swift in Sources */,
-				323BD3041CC1C61D0066B39A /* MaterialButton.swift in Sources */,
-				32BD4D4F1CC6226000D32C1A /* ViewController.swift in Sources */,
-				320619271CC60BF7003A9E23 /* MenuVC.swift in Sources */,
-				32F6C2621CC5AF4500A36C39 /* VPCameraCustomAlbum.swift in Sources */,
-				320619291CC60BF7003A9E23 /* QRcodeVC.swift in Sources */,
-				32334B171CC346DE0003B570 /* MaterialView.swift in Sources */,
-				323BD3061CC1C6A40066B39A /* Contants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323BD2D81CC1A7200066B39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				323BD2E11CC1A7200066B39A /* BarCodeWifiTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323BD2E31CC1A7200066B39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				323BD2EC1CC1A7200066B39A /* BarCodeWifiUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		323BD2DE1CC1A7200066B39A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 323BD2C71CC1A7200066B39A /* BarCodeWifi */;
-			targetProxy = 323BD2DD1CC1A7200066B39A /* PBXContainerItemProxy */;
-		};
-		323BD2E91CC1A7200066B39A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 323BD2C71CC1A7200066B39A /* BarCodeWifi */;
-			targetProxy = 323BD2E81CC1A7200066B39A /* PBXContainerItemProxy */;
-		};
-		3279281D1CC4EF4E0044C9DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CryptoSwift iOS";
-			targetProxy = 3279281C1CC4EF4E0044C9DD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		323BD2CF1CC1A7200066B39A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				323BD2D01CC1A7200066B39A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		323BD2D41CC1A7200066B39A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				323BD2D51CC1A7200066B39A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		323BD2EE1CC1A7200066B39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		323BD2EF1CC1A7200066B39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		323BD2F11CC1A7200066B39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Framwork",
-				);
-				INFOPLIST_FILE = BarCodeWifi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		323BD2F21CC1A7200066B39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Framwork",
-				);
-				INFOPLIST_FILE = BarCodeWifi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		323BD2F41CC1A7200066B39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BarCodeWifiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCodeWifi.app/BarCodeWifi";
-			};
-			name = Debug;
-		};
-		323BD2F51CC1A7200066B39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BarCodeWifiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarCodeWifi.app/BarCodeWifi";
-			};
-			name = Release;
-		};
-		323BD2F71CC1A7200066B39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = BarCodeWifiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = BarCodeWifi;
-			};
-			name = Debug;
-		};
-		323BD2F81CC1A7200066B39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = BarCodeWifiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.hoangmanhtran.com.BarCodeWifiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = BarCodeWifi;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		323BD2C31CC1A7200066B39A /* Build configuration list for PBXProject "BarCodeWifi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				323BD2EE1CC1A7200066B39A /* Debug */,
-				323BD2EF1CC1A7200066B39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		323BD2F01CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				323BD2F11CC1A7200066B39A /* Debug */,
-				323BD2F21CC1A7200066B39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		323BD2F31CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				323BD2F41CC1A7200066B39A /* Debug */,
-				323BD2F51CC1A7200066B39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		323BD2F61CC1A7200066B39A /* Build configuration list for PBXNativeTarget "BarCodeWifiUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				323BD2F71CC1A7200066B39A /* Debug */,
-				323BD2F81CC1A7200066B39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 323BD2C01CC1A7200066B39A /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0356051E4C565E5C587F0952</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>04CB5FEFDC10E2920EAC988E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BarCodeWifi/Pods-BarCodeWifi-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>1F9F92C1A233B318A1233181</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9C8762530DA33B507AE77F2C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20A8967ABDD3186567D5A6F3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BarCodeWifi/Pods-BarCodeWifi-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>320619221CC60BF7003A9E23</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>32BD4D4E1CC6226000D32C1A</string>
+				<string>320619231CC60BF7003A9E23</string>
+				<string>320619241CC60BF7003A9E23</string>
+				<string>320619251CC60BF7003A9E23</string>
+				<string>320619261CC60BF7003A9E23</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Controller</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>320619231CC60BF7003A9E23</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MenuVC.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>320619241CC60BF7003A9E23</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>PlainTextVC.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>320619251CC60BF7003A9E23</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>QRcodeVC.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>320619261CC60BF7003A9E23</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>WifiNetworkVC.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>320619271CC60BF7003A9E23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>320619231CC60BF7003A9E23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>320619281CC60BF7003A9E23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>320619241CC60BF7003A9E23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>320619291CC60BF7003A9E23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>320619251CC60BF7003A9E23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3206192A1CC60BF7003A9E23</key>
+		<dict>
+			<key>fileRef</key>
+			<string>320619261CC60BF7003A9E23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32334B161CC346DE0003B570</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>MaterialView.swift</string>
+			<key>path</key>
+			<string>View/MaterialView.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32334B171CC346DE0003B570</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32334B161CC346DE0003B570</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD2BF1CC1A7200066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>32431F421CC537A0005F3C8B</string>
+				<string>329F91961CC3E822009823D2</string>
+				<string>329E622F1CC3927600DAC906</string>
+				<string>323BD3021CC1C4CE0066B39A</string>
+				<string>323BD3011CC1C4C50066B39A</string>
+				<string>323BD3001CC1C4AE0066B39A</string>
+				<string>323BD2FE1CC1C4A20066B39A</string>
+				<string>320619221CC60BF7003A9E23</string>
+				<string>323BD2FB1CC1C43B0066B39A</string>
+				<string>323BD2CA1CC1A7200066B39A</string>
+				<string>323BD2DF1CC1A7200066B39A</string>
+				<string>323BD2EA1CC1A7200066B39A</string>
+				<string>323BD2C91CC1A7200066B39A</string>
+				<string>327928081CC4EF340044C9DD</string>
+				<string>4EF96733FF587B7A7B7D222C</string>
+				<string>1F9F92C1A233B318A1233181</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2C01CC1A7200066B39A</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>mhtran</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>323BD2C71CC1A7200066B39A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+					</dict>
+					<key>323BD2DB1CC1A7200066B39A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>323BD2C71CC1A7200066B39A</string>
+					</dict>
+					<key>323BD2E61CC1A7200066B39A</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>323BD2C71CC1A7200066B39A</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>323BD2C31CC1A7200066B39A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>323BD2BF1CC1A7200066B39A</string>
+			<key>productRefGroup</key>
+			<string>323BD2C91CC1A7200066B39A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array>
+				<dict>
+					<key>ProductGroup</key>
+					<string>327928091CC4EF340044C9DD</string>
+					<key>ProjectRef</key>
+					<string>327928081CC4EF340044C9DD</string>
+				</dict>
+			</array>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>323BD2C71CC1A7200066B39A</string>
+				<string>323BD2DB1CC1A7200066B39A</string>
+				<string>323BD2E61CC1A7200066B39A</string>
+			</array>
+		</dict>
+		<key>323BD2C31CC1A7200066B39A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>323BD2EE1CC1A7200066B39A</string>
+				<string>323BD2EF1CC1A7200066B39A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>323BD2C41CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3206192A1CC60BF7003A9E23</string>
+				<string>329F91981CC3E84B009823D2</string>
+				<string>320619281CC60BF7003A9E23</string>
+				<string>324D74BE1CC4D281004200F9</string>
+				<string>323BD2CC1CC1A7200066B39A</string>
+				<string>323BD3041CC1C61D0066B39A</string>
+				<string>32BD4D4F1CC6226000D32C1A</string>
+				<string>320619271CC60BF7003A9E23</string>
+				<string>32F6C2621CC5AF4500A36C39</string>
+				<string>320619291CC60BF7003A9E23</string>
+				<string>32334B171CC346DE0003B570</string>
+				<string>323BD3061CC1C6A40066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2C51CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>323BD2FA1CC1C4310066B39A</string>
+				<string>A56E801178FD11974A040C40</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2C61CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>323BD2D61CC1A7200066B39A</string>
+				<string>323BD2D31CC1A7200066B39A</string>
+				<string>32CDD36B1CC5CB33006F33C2</string>
+				<string>323BD2D11CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2C71CC1A7200066B39A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>323BD2F01CC1A7200066B39A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>0356051E4C565E5C587F0952</string>
+				<string>323BD2C41CC1A7200066B39A</string>
+				<string>323BD2C51CC1A7200066B39A</string>
+				<string>323BD2C61CC1A7200066B39A</string>
+				<string>324D74911CC47C17004200F9</string>
+				<string>04CB5FEFDC10E2920EAC988E</string>
+				<string>20A8967ABDD3186567D5A6F3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>3279281D1CC4EF4E0044C9DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BarCodeWifi</string>
+			<key>productName</key>
+			<string>BarCodeWifi</string>
+			<key>productReference</key>
+			<string>323BD2C81CC1A7200066B39A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>323BD2C81CC1A7200066B39A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BarCodeWifi.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>323BD2C91CC1A7200066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>323BD2C81CC1A7200066B39A</string>
+				<string>323BD2DC1CC1A7200066B39A</string>
+				<string>323BD2E71CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2CA1CC1A7200066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>323BD2CB1CC1A7200066B39A</string>
+				<string>323BD2CF1CC1A7200066B39A</string>
+				<string>323BD2D21CC1A7200066B39A</string>
+				<string>323BD2D41CC1A7200066B39A</string>
+				<string>323BD2D71CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BarCodeWifi</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2CB1CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2CC1CC1A7200066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD2CB1CC1A7200066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD2CF1CC1A7200066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>323BD2D01CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2D01CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2D11CC1A7200066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD2CF1CC1A7200066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD2D21CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2D31CC1A7200066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD2D21CC1A7200066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD2D41CC1A7200066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>323BD2D51CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2D51CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2D61CC1A7200066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD2D41CC1A7200066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD2D71CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2D81CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>323BD2E11CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2D91CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2DA1CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2DB1CC1A7200066B39A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>323BD2F31CC1A7200066B39A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>323BD2D81CC1A7200066B39A</string>
+				<string>323BD2D91CC1A7200066B39A</string>
+				<string>323BD2DA1CC1A7200066B39A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>323BD2DE1CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BarCodeWifiTests</string>
+			<key>productName</key>
+			<string>BarCodeWifiTests</string>
+			<key>productReference</key>
+			<string>323BD2DC1CC1A7200066B39A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>323BD2DC1CC1A7200066B39A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BarCodeWifiTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>323BD2DD1CC1A7200066B39A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>323BD2C01CC1A7200066B39A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>323BD2C71CC1A7200066B39A</string>
+			<key>remoteInfo</key>
+			<string>BarCodeWifi</string>
+		</dict>
+		<key>323BD2DE1CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>323BD2C71CC1A7200066B39A</string>
+			<key>targetProxy</key>
+			<string>323BD2DD1CC1A7200066B39A</string>
+		</dict>
+		<key>323BD2DF1CC1A7200066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>323BD2E01CC1A7200066B39A</string>
+				<string>323BD2E21CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BarCodeWifiTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2E01CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BarCodeWifiTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2E11CC1A7200066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD2E01CC1A7200066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD2E21CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2E31CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>323BD2EC1CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2E41CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2E51CC1A7200066B39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>323BD2E61CC1A7200066B39A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>323BD2F61CC1A7200066B39A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>323BD2E31CC1A7200066B39A</string>
+				<string>323BD2E41CC1A7200066B39A</string>
+				<string>323BD2E51CC1A7200066B39A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>323BD2E91CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BarCodeWifiUITests</string>
+			<key>productName</key>
+			<string>BarCodeWifiUITests</string>
+			<key>productReference</key>
+			<string>323BD2E71CC1A7200066B39A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>323BD2E71CC1A7200066B39A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BarCodeWifiUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>323BD2E81CC1A7200066B39A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>323BD2C01CC1A7200066B39A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>323BD2C71CC1A7200066B39A</string>
+			<key>remoteInfo</key>
+			<string>BarCodeWifi</string>
+		</dict>
+		<key>323BD2E91CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>323BD2C71CC1A7200066B39A</string>
+			<key>targetProxy</key>
+			<string>323BD2E81CC1A7200066B39A</string>
+		</dict>
+		<key>323BD2EA1CC1A7200066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>323BD2EB1CC1A7200066B39A</string>
+				<string>323BD2ED1CC1A7200066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BarCodeWifiUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2EB1CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BarCodeWifiUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2EC1CC1A7200066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD2EB1CC1A7200066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD2ED1CC1A7200066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2EE1CC1A7200066B39A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>323BD2EF1CC1A7200066B39A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>323BD2F01CC1A7200066B39A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>323BD2F11CC1A7200066B39A</string>
+				<string>323BD2F21CC1A7200066B39A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>323BD2F11CC1A7200066B39A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>32D41D292C440C29F8235130</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>EMBEDDED_CONTENT_CONTAINS_SWIFT</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)</string>
+					<string>$(PROJECT_DIR)/Framwork</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>BarCodeWifi/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>www.hoangmanhtran.com.BarCodeWifi</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>323BD2F21CC1A7200066B39A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>440C3C338EA20E7517D43234</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>EMBEDDED_CONTENT_CONTAINS_SWIFT</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(PROJECT_DIR)</string>
+					<string>$(PROJECT_DIR)/Framwork</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>BarCodeWifi/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>www.hoangmanhtran.com.BarCodeWifi</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>323BD2F31CC1A7200066B39A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>323BD2F41CC1A7200066B39A</string>
+				<string>323BD2F51CC1A7200066B39A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>323BD2F41CC1A7200066B39A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BarCodeWifiTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>www.hoangmanhtran.com.BarCodeWifiTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BarCodeWifi.app/BarCodeWifi</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>323BD2F51CC1A7200066B39A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BarCodeWifiTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>www.hoangmanhtran.com.BarCodeWifiTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BarCodeWifi.app/BarCodeWifi</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>323BD2F61CC1A7200066B39A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>323BD2F71CC1A7200066B39A</string>
+				<string>323BD2F81CC1A7200066B39A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>323BD2F71CC1A7200066B39A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>BarCodeWifiUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>www.hoangmanhtran.com.BarCodeWifiUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>BarCodeWifi</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>323BD2F81CC1A7200066B39A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>BarCodeWifiUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>www.hoangmanhtran.com.BarCodeWifiUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>BarCodeWifi</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>323BD2F91CC1C4310066B39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AVFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AVFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>323BD2FA1CC1C4310066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD2F91CC1C4310066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD2FB1CC1C43B0066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>323BD2F91CC1C4310066B39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Framwork</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD2FE1CC1C4A20066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>323BD3031CC1C61D0066B39A</string>
+				<string>32334B161CC346DE0003B570</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD3001CC1C4AE0066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>324D74BD1CC4D281004200F9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Modal</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD3011CC1C4C50066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>32CDD36A1CC5CB33006F33C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Sources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD3021CC1C4CE0066B39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>32F6C2611CC5AF4500A36C39</string>
+				<string>323BD3051CC1C6A40066B39A</string>
+				<string>32507A521CC47A5200D11AA9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Utils</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD3031CC1C61D0066B39A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>MaterialButton.swift</string>
+			<key>path</key>
+			<string>View/MaterialButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD3041CC1C61D0066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD3031CC1C61D0066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>323BD3051CC1C6A40066B39A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Contants.swift</string>
+			<key>path</key>
+			<string>Utils/Contants.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323BD3061CC1C6A40066B39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>323BD3051CC1C6A40066B39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32431F421CC537A0005F3C8B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AssetsLibrary.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AssetsLibrary.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>324D74911CC47C17004200F9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string></string>
+			<key>dstSubfolderSpec</key>
+			<string>10</string>
+			<key>files</key>
+			<array>
+				<string>3279281B1CC4EF4E0044C9DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>name</key>
+			<string>Embed Frameworks</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>324D74BD1CC4D281004200F9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>CustomPhotoAlbum.swift</string>
+			<key>path</key>
+			<string>Modal/CustomPhotoAlbum.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>324D74BE1CC4D281004200F9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>324D74BD1CC4D281004200F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32507A521CC47A5200D11AA9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BarCodeWifiHeader.h</string>
+			<key>path</key>
+			<string>Utils/BarCodeWifiHeader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>327928081CC4EF340044C9DD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.pb-project</string>
+			<key>name</key>
+			<string>CryptoSwift.xcodeproj</string>
+			<key>path</key>
+			<string>../../../Volumes/DATA/CryptoSwift-swift3/CryptoSwift.xcodeproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>327928091CC4EF340044C9DD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>327928111CC4EF340044C9DD</string>
+				<string>327928131CC4EF340044C9DD</string>
+				<string>327928151CC4EF340044C9DD</string>
+				<string>327928171CC4EF340044C9DD</string>
+				<string>327928191CC4EF340044C9DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>327928101CC4EF340044C9DD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>327928081CC4EF340044C9DD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>754BE45519693E190098E6F3</string>
+			<key>remoteInfo</key>
+			<string>CryptoSwift iOS</string>
+		</dict>
+		<key>327928111CC4EF340044C9DD</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>CryptoSwift.framework</string>
+			<key>remoteRef</key>
+			<string>327928101CC4EF340044C9DD</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>327928121CC4EF340044C9DD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>327928081CC4EF340044C9DD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>5596BDBB1BC8F220007E38D5</string>
+			<key>remoteInfo</key>
+			<string>CryptoSwift watchOS</string>
+		</dict>
+		<key>327928131CC4EF340044C9DD</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>CryptoSwift.framework</string>
+			<key>remoteRef</key>
+			<string>327928121CC4EF340044C9DD</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>327928141CC4EF340044C9DD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>327928081CC4EF340044C9DD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>75DF77721BC8EB59006E9520</string>
+			<key>remoteInfo</key>
+			<string>CryptoSwift OSX</string>
+		</dict>
+		<key>327928151CC4EF340044C9DD</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>CryptoSwift.framework</string>
+			<key>remoteRef</key>
+			<string>327928141CC4EF340044C9DD</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>327928161CC4EF340044C9DD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>327928081CC4EF340044C9DD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>75D614BF1BD844F2001358B2</string>
+			<key>remoteInfo</key>
+			<string>CryptoSwift tvOS</string>
+		</dict>
+		<key>327928171CC4EF340044C9DD</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>CryptoSwift.framework</string>
+			<key>remoteRef</key>
+			<string>327928161CC4EF340044C9DD</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>327928181CC4EF340044C9DD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>327928081CC4EF340044C9DD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>754BE46019693E190098E6F3</string>
+			<key>remoteInfo</key>
+			<string>CryptoSwiftTests</string>
+		</dict>
+		<key>327928191CC4EF340044C9DD</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>CryptoSwiftTests.xctest</string>
+			<key>remoteRef</key>
+			<string>327928181CC4EF340044C9DD</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3279281B1CC4EF4E0044C9DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>327928111CC4EF340044C9DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>CodeSignOnCopy</string>
+					<string>RemoveHeadersOnCopy</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3279281C1CC4EF4E0044C9DD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>327928081CC4EF340044C9DD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>754BE45419693E190098E6F3</string>
+			<key>remoteInfo</key>
+			<string>CryptoSwift iOS</string>
+		</dict>
+		<key>3279281D1CC4EF4E0044C9DD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>CryptoSwift iOS</string>
+			<key>targetProxy</key>
+			<string>3279281C1CC4EF4E0044C9DD</string>
+		</dict>
+		<key>329E622F1CC3927600DAC906</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>HeaderBarCodeWifi.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>329F91961CC3E822009823D2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>329F91971CC3E84B009823D2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Extension</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>329F91971CC3E84B009823D2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Extension.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>329F91981CC3E84B009823D2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>329F91971CC3E84B009823D2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32BD4D4E1CC6226000D32C1A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32BD4D4F1CC6226000D32C1A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32BD4D4E1CC6226000D32C1A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32CDD36A1CC5CB33006F33C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>ex.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32CDD36B1CC5CB33006F33C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32CDD36A1CC5CB33006F33C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>32D41D292C440C29F8235130</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BarCodeWifi.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BarCodeWifi/Pods-BarCodeWifi.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32F6C2611CC5AF4500A36C39</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>VPCameraCustomAlbum.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32F6C2621CC5AF4500A36C39</key>
+		<dict>
+			<key>fileRef</key>
+			<string>32F6C2611CC5AF4500A36C39</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>440C3C338EA20E7517D43234</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BarCodeWifi.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-BarCodeWifi/Pods-BarCodeWifi.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4EF96733FF587B7A7B7D222C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>32D41D292C440C29F8235130</string>
+				<string>440C3C338EA20E7517D43234</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C8762530DA33B507AE77F2C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_BarCodeWifi.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A56E801178FD11974A040C40</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9C8762530DA33B507AE77F2C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>323BD2C01CC1A7200066B39A</string>
+</dict>
+</plist>

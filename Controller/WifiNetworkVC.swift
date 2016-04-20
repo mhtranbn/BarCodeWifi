@@ -77,7 +77,7 @@ class WifiNetworkVC: UIViewController {
             print("wrong ssid")
             
         } else {
-            data = ssidWifi.text! + "+" + passwordWifiTextField.text! + "+" + networkType
+            data = "WIFI:S:" + ssidWifi.text! + ";T:" + networkType + ";P;" + passwordWifiTextField.text! + ";;"
             createQRButton.hidden = false
             navigationController?.pushViewController(({
                 let vc = self.storyboard!.instantiateViewControllerWithIdentifier("qrcodeVC") as! QRcodeVC
