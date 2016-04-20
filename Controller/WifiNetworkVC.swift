@@ -57,10 +57,7 @@ class WifiNetworkVC: UIViewController {
             break
         }
     }
-    
-    
-    
-    
+
     @IBAction func createQRcodeAction(sender: AnyObject) {
         //  ?, ", $, [, \, ], and +.
         let a = ["?","\"","$","\\","]","+"]
@@ -77,7 +74,7 @@ class WifiNetworkVC: UIViewController {
             print("wrong ssid")
             
         } else {
-            data = "WIFI:S:" + ssidWifi.text! + ";T:" + networkType + ";P;" + passwordWifiTextField.text! + ";;"
+            data = "WIFI:S:" + ssidWifi.text! + ";T:" + networkType + ";P:" + passwordWifiTextField.text! + ";;"
             createQRButton.hidden = false
             navigationController?.pushViewController(({
                 let vc = self.storyboard!.instantiateViewControllerWithIdentifier("qrcodeVC") as! QRcodeVC

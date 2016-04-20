@@ -76,8 +76,7 @@ class PlainTextVC: UIViewController {
                 break
 
             }
-            
-            
+   
         }
         
         return result
@@ -93,9 +92,7 @@ class PlainTextVC: UIViewController {
 //        print(timestamp)
         return timestamp
     }
-    
-    
-    
+
     @IBAction func showQRCode(sender: AnyObject) {
     }
     
