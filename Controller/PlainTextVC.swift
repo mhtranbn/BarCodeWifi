@@ -23,41 +23,55 @@ class PlainTextVC: UIViewController {
     
     var dataQRcodeScan: String!
     
+    var ssid:String = ""
+    var pass:String = ""
+    var encrypt:String = ""
+    var temp:String = ""
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         timeSaveQRcodeLabel.text = printTimestamp()
-        var arrayString: Array = [String]()
+//        var arrayString: Array = [String]()
 //        let a = Array(dataQRcodeScan)
-        var ssid:String = ""
-        var pass:String = ""
-        var encrypt:String = ""
-        var temp:String = ""
+        
+        if (dataQRcodeScan.rangeOfString("ENC;ENC:") != nil) {
+            deEncrypt(dataQRcodeScan, key: "")
+            
+        }
         
         if (dataQRcodeScan.rangeOfString("WIFI:S:") != nil) {
-            dataQRcodeScan = dataQRcodeScan.chompLeft("WIFI:S:")
-            NSLog("dataQRcode = \(dataQRcodeScan)")
-            ssid = getStringFromStringByCharacter(dataQRcodeScan, character: ";")
-            NSLog("ssid = \(ssid)")
-            dataQRcodeScan = dataQRcodeScan.chompLeft(ssid + ";T:")
-            NSLog("dataQRcode = \(dataQRcodeScan)")
-            encrypt = getStringFromStringByCharacter(dataQRcodeScan, character: ";")
-            NSLog("encrypt = \(encrypt)")
-            NSLog("ssid = \(ssid)")
-            dataQRcodeScan = dataQRcodeScan.chompLeft(encrypt + ";P:")
-            NSLog("dataQRcode = \(dataQRcodeScan)")
-            pass = dataQRcodeScan.chompRight(";;")
-            NSLog("encrypt +  = \(encrypt + ";P:")")
-            firstLabelIToShow.text = "Network Name: " + ssid
-            secondLabelToShow.text = "Password: " + pass
-            thirdLabelToShow.text = "Type: " + encrypt
+            
         } else {
             firstLabelIToShow.text = dataQRcodeScan
             secondLabelToShow.text = ""
             thirdLabelToShow.text = ""
         }
+    }
+    
+    func deEncrypt(data: String, key: String) -> String {
+        return ""
+    }
+    
+    func showInfoQRcode() {
+        dataQRcodeScan = dataQRcodeScan.chompLeft("WIFI:S:")
+        NSLog("dataQRcode = \(dataQRcodeScan)")
+        ssid = getStringFromStringByCharacter(dataQRcodeScan, character: ";")
+        NSLog("ssid = \(ssid)")
+        dataQRcodeScan = dataQRcodeScan.chompLeft(ssid + ";T:")
+        NSLog("dataQRcode = \(dataQRcodeScan)")
+        encrypt = getStringFromStringByCharacter(dataQRcodeScan, character: ";")
+        NSLog("encrypt = \(encrypt)")
+        NSLog("ssid = \(ssid)")
+        dataQRcodeScan = dataQRcodeScan.chompLeft(encrypt + ";P:")
+        NSLog("dataQRcode = \(dataQRcodeScan)")
+        pass = dataQRcodeScan.chompRight(";;")
+        NSLog("encrypt +  = \(encrypt + ";P:")")
+        firstLabelIToShow.text = "Network Name: " + ssid
+        secondLabelToShow.text = "Password: " + pass
+        thirdLabelToShow.text = "Type: " + encrypt
     }
     
     func getStringFromStringByCharacter(totalString: String, character: String) -> String {

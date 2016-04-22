@@ -8,7 +8,7 @@
 //
 
 import UIKit
-import CryptoSwift
+
 import Photos
 import AssetsLibrary
 
@@ -17,6 +17,7 @@ class QRcodeVC: UIViewController {
     var textField2: UITextField?
     var dataToQR: String!
     var image: CGImage!
+    let AES = CryptoJS.AES()
     //    VPCameraCustomAlbum.swift -> static let albumName = "YOUR-ALBUM-NAME"
     
     @IBOutlet weak var qrcodeImage: UIImageView!
@@ -119,28 +120,10 @@ class QRcodeVC: UIViewController {
     }
     
     func clickEncryption() {
-        let key: [UInt8] = [0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00]
-        let iv: [UInt8] = AES.randomIV(AES.blockSize)
-        let plaintextData = textField?.text?.dataUsingEncoding(NSUTF8StringEncoding,allowLossyConversion: false)
-        let byteArray = plaintextData!.arrayOfBytes()
-        var easEncryted: [UInt8]!
-        //        var easDecrypted: [UInt8]!
         
-        do {
-            easEncryted = try AES(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).encrypt(byteArray)
-            //                easDecrypted = try AES(key: key, iv: iv, blockMode: .CBC, padding: PKCS7()).decrypt(easEncryted)
-            NSLog("easEncryted = \(easEncryted)")
-            //                NSLog("easDecrypted = \(easDecrypted)")
-        } catch AES.Error.BlockSizeExceeded {
-            
-        } catch {
-            
-        }
-        
-        //        let a = NSData.withBytes(easDecrypted)
-        //        let b = NSString(data: a, encoding: NSUTF8StringEncoding)
-        
-        qrcodeImage.image = UIImage(CGImage: generateQRCodeFromString(String(easEncryted))!)
+         let encrypted = "ENC;" + "ENC:" + AES.encrypt(dataToQR, secretKey: textField!.text!)
+         print(AES.decrypt(encrypted, secretKey: textField!.text!))
+        qrcodeImage.image = UIImage(CGImage: generateQRCodeFromString(String(encrypted))!)
         
         
     }
